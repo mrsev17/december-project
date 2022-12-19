@@ -101,8 +101,6 @@ a {
 
 .navbar {
     background-color: #ffffff !important;
-    padding-top: 32px;
-    padding-bottom: 27px;
 }
 .navbar-toggler {
     border: none;
@@ -131,14 +129,16 @@ a {
 
 
 /* Header section */
-
+.header{
+    margin: 30px 0 23px;
+}
 .header__list-navbar {
     margin: 0 auto;
 }
 
 .header__right-side-wrapper {
-    padding-right: 52px;
     gap: 16px;
+    margin-right: 66px;
 }
 
 .header__link-question-wrapper > p {
@@ -170,36 +170,41 @@ a {
     background-position: center 100%;
     background-repeat: no-repeat;
     margin-bottom: 84px;
-    padding: 46px 0;
+    padding: 52px 0 26px;
     min-height: 626px;
     border-top: 1px solid #000000;
 }
-/*
-.banner__calculator {
-    min-height: 625px;
+.banner__desktop-one {
+    margin-bottom: 55px;
+}
+.banner__searching-animation-wrapper {
+    margin-bottom: 50px;
 }
 
- */
 .banner__desktop-one-form {
-    margin-top: 30px;
+    margin-top: 29px;
+}
+.banner__main-title {
+    margin: 0 0 24px 0;
 }
 .banner__main-title > h1 {
     font-weight: var(--medium-weight);
     font-size: var(--main-title-font);
     text-align: center;
+
 }
 .banner__accent-line {
-    margin: 24px auto 0;
+    margin: 0 auto 34px;
     width: 150px;
     height: 3px;
     background-color: #0B7AB3;
 }
 .banner__sub-info > p {
-    max-width: 365px;
+    width: 67%;
     text-align: center;
     font-size: var(--small-font);
     line-height: 30px;
-    margin: 14px auto 0;
+    margin: 10px auto 0;
 }
 .banner__sub-input,
 .banner__sub-input-second {
@@ -212,7 +217,7 @@ a {
 
 
 .banner__calculator-btn-submit {
-    margin: 28px auto 0;
+    margin: 0 auto 55px;
     display: flex;
     justify-content: center;
 }
@@ -249,11 +254,16 @@ a {
     background-color: #0B7AB3;
 }
 .banner__benefits-wrapper {
+    /*
     margin-top: 55px;
+     */
     gap: 48px;
 }
 .banner__benefits-case {
     gap: 8px;
+}
+.banner__benefits-wrapper {
+    margin-bottom: 34px;
 }
 .banner__benefits-text > p {
     font-size: 16px;
@@ -262,7 +272,10 @@ a {
 }
 
 .banner__vital-links-wrapper {
+    /*
     margin-top: 36px;
+
+     */
     gap: 26px;
 }
 .banner__vital-case > a {
@@ -270,7 +283,10 @@ a {
 }
 .banner__from-case {
     font-size: 22px;
-    width: 8%;
+    width: 9%;
+}
+.banner__steps-diagram {
+    margin-bottom: 50px;
 }
 
 /* 17.12.2022 - Banner */
@@ -288,13 +304,16 @@ a {
     background-color: transparent;
     outline: none;
     border: 1px solid #216F5A;
-    padding: 11px 22px;
+    padding: 11px 13px;
 }
 .banner__zip-code-input:focus,
 .banner__state-input:focus {
     background-color: transparent;
     box-shadow: none;
     border: 1px solid #216F5A;
+}
+.banner__searching-description {
+    margin-bottom: 42px;
 }
 .banner__mg-control-input {
     margin-right: 24px;
@@ -306,7 +325,10 @@ a {
     padding-left: 5px;
 }
 .banner__adaptive-benefits {
+    /*
     margin-top: 32px;
+
+     */
     gap: 8px;
 }
 .banner__modal-desktop-form-seven {
@@ -319,13 +341,18 @@ a {
 .modal__calculator-step-one-submit {
     margin-bottom: 32px;
 }
-
+.banner__under-progress-info {
+    margin: 0 auto 28px;
+}
 
 
 
 /* Work Section */
 .work {
     margin-bottom: 122px;
+}
+.work__title-case {
+    margin-bottom: 12px;
 }
 .work__title-case > h2 {
     text-align: center;
@@ -360,8 +387,8 @@ a {
 
 
 .reviews__left-title {
-
-    max-width: 548px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 .reviews__left-title > h3,
 .reviews__right-title > h3 {
@@ -426,9 +453,7 @@ a {
     color: #666666;
     line-height: 27px;
 }
-.reviews__right-carousel {
-    margin-top: 10px;
-}
+
 .reviews__carousel-item-lower {
     margin-top: 20px;
 }
@@ -650,6 +675,14 @@ a {
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-top: 10px;
     }
+    .modal__custom-for-inputs-desktop-two-city,
+    .modal__custom-for-inputs-desktop-two-state {
+        padding-left: calc(var(--bs-gutter-x) * .5) !important;
+        padding-right: calc(var(--bs-gutter-x) * .5) !important;
+        width: 100% !important;
+
+    }
+
     /*
     .banner__steps-circle-complete >  span,
     .banner__steps-circle-complete-negative > span {
@@ -721,6 +754,7 @@ a {
     .banner__steps-control-mid-text span {
         display: none !important;
     }
+
     .banner__searching-description h2 {
         font-size: 28px;
     }
@@ -745,6 +779,9 @@ a {
     .banner__steps-item {
         gap: 5px !important;
     }
+    .reviews__right-carousel {
+        margin-top: 10px;
+    }
     .col-form-label {
         width: 100%;
         text-align: start;
@@ -767,7 +804,6 @@ a {
     .modal__steps-green-line-form-two {
         margin-right: 3px;
     }
-
 }
 @media (min-width: 992px) {
     .services__mobile-version {
@@ -780,6 +816,9 @@ a {
     }
 }
 @media(max-width: 576px) {
+    .header__logo-icon {
+        padding-left: 13px !important;
+    }
     .modal__gap-control-steps {
         gap: 5px !important;
     }
@@ -788,6 +827,12 @@ a {
     }
     .modal__last-step-gap-control {
         gap: 12px !important;
+    }
+    .banner__accent-line {
+        margin: 0 auto 20px;
+    }
+    .banner__desktop-one {
+        margin-bottom: 32px;
     }
     .banner__control-pad-state-left {
         padding: 0;
@@ -798,7 +843,9 @@ a {
     .banner__steps-green-line {
         width: 25px;
     }
-
+    .modal__mobile-label-second-step {
+        width: 50% !important;
+    }
     .modal__calculator-form-two {
         max-width: 100% !important;
     }
@@ -825,6 +872,7 @@ a {
 
     .banner__main-title > h1,
     .banner__main-title > h2 {
+        text-align: center;
         font-size: 20px !important;
         margin-top: 24px;
     }
@@ -900,12 +948,13 @@ a {
     .banner__control-text-size:after {
         content: "How large is your move?";
     }
-    .banner__under-progress-info {
-        margin-top: 24px !important;
-    }
+
+    /*
     .banner__form-wrapper {
         margin-top: 24px;
     }
+
+     */
     .banner__from-case {
         width: 100%;
         text-align: start;
@@ -1024,9 +1073,12 @@ a {
 .banner__steps-circle-complete-negative span {
     font-size: 22px;
 }
+/*
 .banner__steps-diagram {
     margin-top: 34px;
 }
+
+ */
 .banner__steps-future {
     color: #717171;
 }
@@ -1041,10 +1093,12 @@ a {
 .banner__steps-progress {
     color: #22856A;
 }
-
+/*
 .banner__searching-step {
     margin-top: 50px;
 }
+
+ */
 .banner__searching-description h2 {
     text-align: center;
     font-size: 32px;
@@ -1064,7 +1118,7 @@ a {
 .banner__bottom-space {
     margin-top: 54px;
 }
-.banner__searching-animation-wrapper,
+
 .banner__searching-space-block {
     margin-top: 29px;
 }
@@ -1186,6 +1240,9 @@ a {
 .modal-header button:focus {
     box-shadow: none;
 }
+.modal__under-progress-info {
+    margin: 0 auto 24px !important;
+}
 .banner__modal-dialog-desktop-seven {
     max-width: 720px;
 }
@@ -1197,11 +1254,24 @@ a {
 .modal__control-circle-steps {
     margin-bottom: 0 !important;
 }
+.modal__custom-for-inputs-desktop-two-state,
+.modal__custom-for-inputs-desktop-two-city {
+    width: 41%;
+}
+.modal__custom-for-inputs-desktop-two-state {
+    padding-right: 0;
+}
+.modal__custom-for-inputs-desktop-two-city {
+    padding-left: 0;
+}
 .banner__modal-desktop-title-seven {
     font-size: 42px;
     font-weight: 900;
     text-align: center;
 
+}
+.banner__control-pad-state-left > label {
+    width: 7%;
 }
 .banner__modal-desktop-btn-seven {
     width: 65%;

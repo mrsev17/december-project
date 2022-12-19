@@ -14,10 +14,10 @@
     <header class="header">
         <div class="container header-control-pad">
 
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
+            <nav class="navbar p-0 navbar-expand-lg bg-light">
+                <div class="container-fluid p-0">
 
-                    <a class="header__logo-icon navbar-brand" href="#">
+                    <a class="header__logo-icon p-0 navbar-brand" href="#">
 
                         <svg width="240" height="35" viewBox="0 0 240 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="240" height="35" fill="url(#pattern0)"/>
@@ -218,14 +218,14 @@
                                                         </div>
                                                         <form class="banner__desktop-one-form  modal__calculator-form-two">
                                                             <div class="row mb-0 mb-sm-3 flex-column flex-lg-row justify-content-between banner__control-pad-state-left">
-                                                                <label for="inputZipModal" class="col-sm-2 col col-form-label banner__from-case banner__mg-control-input banner__control-text-zip modal__label-text"> <span>From:</span> </label>
+                                                                <label for="inputZipModal" class="col-sm-2 col col-form-label banner__from-case banner__mg-control-input banner__control-text-zip modal__label-text modal__mobile-label-second-step"> <span>From:</span> </label>
                                                                 <div class="col-lg-10 col">
                                                                     <input type="text" class="form-control banner__zip-code-input" id="inputZipModal" placeholder="Zip code">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 justify-content-between banner__control-pad-state-left">
-                                                                <label for="inputState" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input-popup banner__control-text-position modal__label-text"> <span>To:</span> </label>
-                                                                <div class="col-lg-5 banner__control-pad-state-right modal__adaptive-control-lg">
+                                                                <label for="inputState" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input-popup banner__control-text-position modal__label-text modal__mobile-label-second-step"> <span>To:</span> </label>
+                                                                <div class="col-lg-5  modal__custom-for-inputs-desktop-two-state banner__control-pad-state-right modal__adaptive-control-lg">
                                                                     <select id="inputState" class="form-select banner__state-input">
                                                                         <option selected>Select State</option>
                                                                         <option>State 1</option>
@@ -236,7 +236,7 @@
                                                                 <!--
                                                                 <label for="inputCity" class="col-sm-2 col-form-label banner__from-case"></label>
                                                                 -->
-                                                                <div class="col-lg-5 ">
+                                                                <div class="col-lg-5 modal__custom-for-inputs-desktop-two-city">
                                                                     <select id="inputCity" class="form-select banner__state-input">
                                                                         <option selected>Select City</option>
                                                                         <option>City 1</option>
@@ -568,8 +568,9 @@
                                             <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
                                         </div>
-
+                                        <!--
                                         <div class="banner__searching-space-block"></div>
+                                        -->
 
                                     </div>
 
@@ -702,8 +703,10 @@
                         <div class="reviews__left-wrapper">
                             <div class="reviews__left-title">
                                 <h3>Moving is a No-Brainer with Our Service at Hand!</h3>
-                                <div class="banner__accent-line"></div>
+
                             </div>
+
+                            <div class="banner__accent-line"></div>
 
                             </div>
                             <div class="reviews__mark-wrapper d-flex flex-column gap-3">
