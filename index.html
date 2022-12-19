@@ -115,6 +115,7 @@
             <div class="container">
                 <div class="col-12">
                     <div class="row">
+
                         <div class="hidden__wrapper-for-test-panel-forms d-flex gap-2 align-items-center justify-content-center">
 
                             <div class="hidden__desktop-form-btn">
@@ -133,9 +134,12 @@
 
                         <div class="hidden__wrapper-for-modals-btn d-flex align-items-center justify-content-center">
 
-                            <div>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enterinformation" data-bs-whatever="@mdo">Desktop form 7(Modal)</button>
+                            <div class="d-flex justify-content-center align-items-center gap-1 flex-column flex-lg-row">
 
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enterinformation" data-bs-whatever="@mdo">Desktop form 7(Modal)</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movingpricestepone" data-bs-whatever="@mdo">Desktop form first step (Modal)</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movingpricesteptwo" data-bs-whatever="@mdo">Desktop form second step (Modal)</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movingpricestepthree" data-bs-whatever="@mdo">Desktop form third step (Modal)</button>
 
                                 <div class="modal fade" id="enterinformation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg banner__modal-dialog-desktop-seven">
@@ -160,20 +164,21 @@
                                                 </div>
 
                                                 <form class="banner__modal-desktop-form-seven d-flex flex-column">
-                                                    <div class="">
+                                                    <div class="modal__control-width-input">
                                                         <label for="recipient-name" class="col-form-label d-inline"></label>
                                                         <input type="text" class="form-control banner__modal-input-desktop-seven banner__zip-code-input" id="recipient-name" placeholder="Enter your Name">
                                                     </div>
-                                                    <div class="">
+                                                    <div class="modal__control-width-input">
                                                         <label for="recipient-name-two" class="col-form-label d-inline"></label>
                                                         <input type="text" class="form-control banner__modal-input-desktop-seven banner__zip-code-input" id="recipient-name-two" placeholder="Enter your Mobile">
                                                     </div>
-                                                    <div class="">
+                                                    <div class="modal__control-width-input">
                                                         <label for="recipient-name-three" class="col-form-label d-inline"></label>
                                                         <input type="email" class="form-control banner__modal-input-desktop-seven banner__zip-code-input" id="recipient-name-three" placeholder="Enter your Email">
                                                     </div>
                                                 </form>
                                             </div>
+
                                             <div class="modal-footer banner__calculator-btn-submit banner__modal-desktop-btn-seven d-flex flex-column">
                                                 <button type="button">GET YOUR QUOTE</button>
                                                 <div class="modal__footer-content-text-one">
@@ -184,9 +189,225 @@
                                                 </div>
                                                 <div class="modal__footer-space-block"></div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="modal fade" id="movingpricestepone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg banner__modal-dialog-desktop-seven">
+                                        <div class="modal-content banner__modal-desktop-form-calculator-step-one">
+
+                                            <div class="modal-header">
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                            </div>
+
+                                            <div class="modal-body banner__modal-desktop-form-body-seven">
+
+                                                <div class="banner__main-title modal__title-popup-change">
+                                                    <h2 class="modal__title">MOVING PRICE CALCULATOR</h2>
+                                                </div>
+
+                                                <div class="banner__accent-line"></div>
+
+                                                <div class="banner__form-wrapper">
+                                                        <div class="banner__sub-info">
+                                                            <p class="modal__description">Enter moving details and get your moving quotes in seconds</p>
+                                                        </div>
+                                                        <form class="banner__desktop-one-form  modal__calculator-form-two">
+                                                            <div class="row mb-0 mb-sm-3 flex-column flex-lg-row justify-content-between banner__control-pad-state-left">
+                                                                <label for="inputZipModal" class="col-sm-2 col col-form-label banner__from-case banner__mg-control-input banner__control-text-zip modal__label-text"> <span>From:</span> </label>
+                                                                <div class="col-lg-10 col">
+                                                                    <input type="text" class="form-control banner__zip-code-input" id="inputZipModal" placeholder="Zip code">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 justify-content-between banner__control-pad-state-left">
+                                                                <label for="inputState" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input-popup banner__control-text-position modal__label-text"> <span>To:</span> </label>
+                                                                <div class="col-lg-5 banner__control-pad-state-right modal__adaptive-control-lg">
+                                                                    <select id="inputState" class="form-select banner__state-input">
+                                                                        <option selected>Select State</option>
+                                                                        <option>State 1</option>
+                                                                        <option>State 2</option>
+                                                                        <option>State 3</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!--
+                                                                <label for="inputCity" class="col-sm-2 col-form-label banner__from-case"></label>
+                                                                -->
+                                                                <div class="col-lg-5 ">
+                                                                    <select id="inputCity" class="form-select banner__state-input">
+                                                                        <option selected>Select City</option>
+                                                                        <option>City 1</option>
+                                                                        <option>City 2</option>
+                                                                        <option>City 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div class="banner__calculator-btn-submit modal__calculator-step-one-submit">
+
+                                                            <button type="submit"disabled>LET'S GO</button>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer banner__calculator-btn-submit banner__modal-desktop-btn-seven d-flex flex-column">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                <div class="modal fade" id="movingpricesteptwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg banner__modal-dialog-desktop-seven">
+                                        <div class="modal-content banner__modal-desktop-form-calculator-step-one">
+
+                                            <div class="modal-header">
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                            </div>
+
+                                            <div class="modal-body banner__modal-desktop-form-body-seven">
+
+                                                <div class="banner__main-title modal__title-popup-change">
+                                                    <h2>MOVING PRICE CALCULATOR</h2>
+                                                </div>
+
+                                                <div class="banner__accent-line"></div>
+
+                                                <div class="banner__form-wrapper">
+
+                                                    <div class="banner__steps-diagram d-flex modal__gap-control-steps justify-content-center">
+                                                        <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
+                                                            <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">1</span></div>
+                                                            <div class="banner__steps-text-desk-two"><span>Completed</span></div>
+                                                            <div class="banner__steps-green-line modal__steps-green-line-form-two"></div>
+                                                        </div>
+                                                        <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
+                                                            <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">2</span></div>
+                                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-show-word">Search Movers</span></div>
+                                                            <div class="banner__steps-green-line"></div>
+                                                        </div>
+                                                        <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
+                                                            <div class="banner__steps-circle-complete-negative modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">3</span></div>
+                                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress-negative banner__steps-future">Get Quotes</span></div>
+
+                                                        </div>
+                                                    </div>
+                                                    <form class="banner__under-progress-info modal__under-progress-info modal__control-width-mobile">
+                                                        <div class="row banner__ds-two-row modal__ds-two-row">
+                                                            <label for="modal-select-size" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-date banner__desktop-two-input-pad modal__control-input"><span>When is your move?</span></label>
+                                                            <div class="col-md-7 col banner__center-control-input modal__center-control-input">
+                                                                <input type="date" class="form-control banner__zip-code-input" id="modal-select-size">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row banner__ds-two-row modal__ds-two-row mt-2">
+                                                            <label for="large-ban" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-size banner__your-move-mg banner__desktop-two-input-pad modal__control-input"><span>How large is your move?</span></label>
+                                                            <div class="col-md-7 col banner__center-control-input modal__center-control-input">
+                                                                <div class="col">
+                                                                    <select id="large-ban-modal" class="form-select banner__state-input">
+                                                                        <option selected>Select home size</option>
+                                                                        <option>≥ 6 Bedrooms Apartments</option>
+                                                                        <option>≥ 4 Bedrooms Apartments  </option>
+                                                                        <option>≥ 2 Bedrooms Apartments  </option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="banner__calculator-btn-submit gap-3">
+
+                                                        <div>
+                                                            <button class="banner__btn-back" type="button">BACK</button>
+                                                        </div>
+
+
+
+                                                        <button type="submit">LET'S GO</button>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer banner__calculator-btn-submit banner__modal-desktop-btn-seven d-flex flex-column">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="movingpricestepthree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg banner__modal-dialog-desktop-seven">
+                                        <div class="modal-content banner__modal-desktop-form-calculator-step-one">
+
+                                            <div class="modal-header">
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                            </div>
+
+                                            <div class="modal-body banner__modal-desktop-form-body-seven">
+
+                                                <div class="banner__main-title modal__title-popup-change">
+                                                    <h2>MOVING PRICE CALCULATOR</h2>
+                                                </div>
+
+                                                <div class="banner__accent-line modal__accent-line-three"></div>
+
+                                                <div class="banner__steps-diagram d-flex modal__gap-control-steps modal__last-step-gap-control justify-content-center">
+                                                    <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps ">
+                                                        <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">1</span></div>
+                                                        <div class="banner__steps-text-desk-two"><span>Completed</span></div>
+                                                        <div class="banner__steps-green-line"></div>
+                                                    </div>
+                                                    <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
+                                                        <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">2</span></div>
+                                                        <div class="banner__steps-text-desk-two banner__steps-control-mid-text"><span class="banner__steps-show-word">Search Movers</span></div>
+                                                        <div class="banner__steps-green-line"></div>
+                                                    </div>
+                                                    <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
+                                                        <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">3</span></div>
+                                                        <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-future banner__steps-show-word">Get Quotes</span></div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="banner__searching-step modal__searching-step">
+
+                                                    <div class="banner__searching-description">
+                                                        <h2>SEARCHING FOR MOVERS</h2>
+                                                    </div>
+
+                                                    <div class="banner__searching-animation-wrapper d-flex justify-content-center">
+
+                                                        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+                                                    </div>
+
+                                                    <div class="banner__searching-space-block"></div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer banner__calculator-btn-submit banner__modal-desktop-btn-seven d-flex flex-column">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                     </div>
                 </div>
@@ -211,7 +432,6 @@
 
                             <div class="banner__form-wrapper">
 
-
                                 <!-- Desktop form 1 -->
 
                                 <div class="banner__desktop-one">
@@ -225,29 +445,30 @@
                                             <input type="text" class="form-control banner__zip-code-input" id="inputEmail" placeholder="Zip code">
                                         </div>
                                     </div>
+
                                     <div class="row mb-3">
-                                        <label for="inputState" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input banner__control-text-position"> <span>To:</span> </label>
-                                        <div class="col-lg-5 banner__control-pad-state-right">
-                                            <select id="inputState" class="form-select banner__state-input">
+                                        <label for="inputStateTwo" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input banner__control-text-position"> <span>To:</span> </label>
+                                        <div class="col-lg-5 banner__control-pad-state-right ">
+                                            <select id="inputStateTwo" class="form-select banner__state-input">
                                                 <option selected>Select State</option>
                                                 <option>State 1</option>
                                                 <option>State 2</option>
                                                 <option>State 3</option>
                                             </select>
                                         </div>
-                                        <!--
-                                        <label for="inputCity" class="col-sm-2 col-form-label banner__from-case"></label>
-                                        -->
-                                        <div class="col-lg-5   banner__control-pad-state-left">
-                                            <select id="inputCity" class="form-select banner__state-input">
+
+                                        <label for="inputCitypopup" class="col-sm-2 col-form-label banner__from-case banner__calc-step-one-label"></label>
+
+                                        <div class="col-lg-5   banner__control-pad-state-left banner__adaptive-control-pad">
+                                            <select id="inputCityPopup" class="form-select banner__state-input">
                                                 <option selected>Select City</option>
                                                 <option>City 1</option>
                                                 <option>City 2</option>
                                                 <option>City 3</option>
                                             </select>
                                         </div>
-                                    </div>
-                                </form>
+                                        </div>
+                                    </form>
                                     <div class="banner__calculator-btn-submit">
 
                                         <button type="submit">LET'S GO</button>
@@ -356,7 +577,6 @@
 
                                 <!-- -------------- -->
 
-
                                 </div>
 
                             </div>
@@ -416,8 +636,6 @@
                                 </div>
 
                             </div>
-
-
 
                             </div>
                         </div>
@@ -874,7 +1092,7 @@
         <div class="container-fluid footer__pad-control-container">
             <div class="row">
                 <div class="col-12">
-                    <div class="footer__wrapper-content d-flex justify-content-md-between justify-content-center">
+                    <div class="footer__wrapper-content d-flex justify-content-md-between justify-content-center align-items-center">
                         <div class="footer__left">
                             <p>© 2022 Long Distance Moving. All Rights Reserved</p>
                         </div>
