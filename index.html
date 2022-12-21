@@ -23,6 +23,14 @@
             });
             $("#datepicker").datepicker( "setDate", 7);
         } );
+        $( function() {
+            $("#datepickerModal").datepicker({
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            });
+            $("#datepickerModal").datepicker( "setDate", 7);
+        } );
     </script>
 
     <title>Long Distance</title>
@@ -326,8 +334,8 @@
                                                                 <!--
                                                                 <input type="date" class="form-control banner__zip-code-input" id="modal-select-size">
                                                                 -->
-                                                                <div class="calendar"><p><input type="text" id="datepicker" placeholder="MM/DD/YYYY">
-                                                                    <label for="datepicker" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
+                                                                <div class="calendar"><p><input type="text" id="datepickerModal" placeholder="MM/DD/YYYY">
+                                                                    <label for="datepickerModal" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
                                                             </div>
                                                         </div>
                                                         <div class="row banner__ds-two-row modal__ds-two-row mt-2">
@@ -342,6 +350,7 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
+                                                        </div>
                                                         </div>
                                                     </form>
                                                     <div class="banner__calculator-btn-submit gap-3">
@@ -525,23 +534,33 @@
                                         <div class="row banner__ds-two-row">
 
 
-                                            <label for="datepicker" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-date banner__desktop-two-input-pad"><span>When is your move?</span></label>
-                                            <div class="calendar"><p><input type="text" id="datepicker" placeholder="MM/DD/YYYY">
+                                            <label for="date-ban" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-date banner__desktop-two-input-pad"><span>When is your move?</span></label>
+                                            <!--
+                                            <div class="calendar col-md-7 col banner__center-control-input"><p><input type="text" class="form-control banner__zip-code-input" id="datepicker" placeholder="MM/DD/YYYY">
                                             <label for="datepicker" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
+                                            -->
 
                                             
-                                            <!--
-                                            <div class="col-md-7 col banner__center-control-input">
+
+                                            <div class="col-md-7 col banner__center-control-input banner__arrow-wrapper">
+
+                                                <p><input type="text" class="form-control banner__zip-code-input" id="datepicker" placeholder="MM/DD/YYYY">
+                                                    <label for="datepicker" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
+
+                                                <!--
                                                 <input type="date" class="form-control banner__zip-code-input" id="date-ban">
+                                                -->
+
                                             </div>
-                                            -->
+
+
 
                                         </div>
                                         <div class="row banner__ds-two-row mt-2">
                                             <label for="large-ban" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-size banner__your-move-mg banner__desktop-two-input-pad"><span>How large is your move?</span></label>
                                             <div class="col-md-7 col banner__center-control-input">
                                                 <div class="col">
-                                                    <select id="large-ban" class="form-select banner__state-input">
+                                                    <select id="large-ban" class="form-select banner__state-input banner__home-size-input">
                                                         <option selected>Select home size</option>
                                                         <option>≥ 6 Bedrooms Apartments</option>
                                                         <option>≥ 4 Bedrooms Apartments  </option>
