@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -29,6 +30,7 @@
                 selectOtherMonths: true,
                 dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
             });
+            $("ui-datepikcer").datepicker("background-color", "yellow");
             $("#datepickerModal").datepicker( "setDate", 7);
         } );
     </script>
@@ -236,7 +238,7 @@
                                                     <h2 class="modal__title">MOVING PRICE CALCULATOR</h2>
                                                 </div>
 
-                                                <div class="banner__accent-line"></div>
+                                                <div class="modal__accent-line"></div>
 
                                                 <div class="banner__form-wrapper">
                                                         <div class="banner__sub-info">
@@ -306,7 +308,7 @@
                                                     <h2>MOVING PRICE CALCULATOR</h2>
                                                 </div>
 
-                                                <div class="banner__accent-line"></div>
+                                                <div class="modal__accent-step-search"></div>
 
                                                 <div class="banner__form-wrapper">
 
@@ -334,7 +336,7 @@
                                                                 <!--
                                                                 <input type="date" class="form-control banner__zip-code-input" id="modal-select-size">
                                                                 -->
-                                                                <div class="calendar"><p><input type="text" id="datepickerModal" placeholder="MM/DD/YYYY">
+                                                                <div class="calendar calendar-modal"><p><input type="text" id="datepickerModal" placeholder="MM/DD/YYYY">
                                                                     <label for="datepickerModal" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
                                                             </div>
                                                         </div>
@@ -393,7 +395,7 @@
                                                     <h2>MOVING PRICE CALCULATOR</h2>
                                                 </div>
 
-                                                <div class="banner__accent-line modal__accent-line-three"></div>
+                                                <div class="modal__accent-step-search"></div>
 
                                                 <div class="banner__steps-diagram d-flex modal__gap-control-steps modal__last-step-gap-control justify-content-center">
                                                     <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps ">
@@ -459,25 +461,33 @@
                                 <h1>MOVING PRICE CALCULATOR</h1>
                             </div>
 
-                            <div class="banner__accent-line"></div>
+                                <!--
+
+                            <div class="banner__accent-line banner__accent-line-second-form"></div>
+                            -->
 
                             <div class="banner__form-wrapper">
+
+
 
                                 <!-- Desktop form 1 -->
 
                                 <div class="banner__desktop-one">
+
+                                    <div class="banner__accent-line"></div>
+
                                     <div class="banner__sub-info">
                                         <p>Enter moving details and get your moving quotes in seconds</p>
                                     </div>
                                     <form class="banner__desktop-one-form">
-                                    <div class="row mb-0 mb-sm-3 flex-column flex-lg-row">
+                                    <div class="row flex-column flex-lg-row banner__desktop-one-form-mb-control">
                                         <label for="inputEmail" class="col-sm-2 col col-form-label banner__from-case banner__mg-control-input banner__control-text-zip"> <span>From:</span> </label>
                                         <div class="col-lg-10 col">
                                             <input type="text" class="form-control banner__zip-code-input" id="inputEmail" placeholder="Zip code">
                                         </div>
                                     </div>
 
-                                    <div class="row mb-3">
+                                    <div class="row">
                                         <label for="inputStateTwo" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input banner__control-text-position"> <span>To:</span> </label>
                                         <div class="col-lg-5 banner__control-pad-state-right ">
                                             <select id="inputStateTwo" class="form-select banner__state-input">
@@ -490,7 +500,7 @@
 
                                         <label for="inputCitypopup" class="col-sm-2 col-form-label banner__from-case banner__calc-step-one-label"></label>
 
-                                        <div class="col-lg-5   banner__control-pad-state-left banner__adaptive-control-pad">
+                                        <div class="col-lg-5 banner__control-pad-state-left banner__adaptive-control-pad">
                                             <select id="inputCityPopup" class="form-select banner__state-input">
                                                 <option selected>Select City</option>
                                                 <option>City 1</option>
@@ -513,24 +523,36 @@
                                 <!-- Desktop form 3 -->
 
                                 <div class="banner__desktop-two">
-                                    <div class="banner__steps-diagram d-flex gap-1 gap-xl-2 gap-xxl-3">
-                                        <div class="banner__steps-item d-flex align-items-center gap-1 gap-xl-2 gap-xxl-3">
-                                            <div class="banner__steps-circle-complete d-flex justify-content-center align-items-center"><span>1</span></div>
-                                            <div class="banner__steps-text-desk-two"><span>Completed</span></div>
-                                            <div class="banner__steps-green-line"></div>
-                                        </div>
-                                        <div class="banner__steps-item d-flex align-items-center gap-1 gap-xl-2 gap-xxl-3">
-                                            <div class="banner__steps-circle-complete d-flex justify-content-center align-items-center"><span>2</span></div>
-                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-show-word">Search Movers</span></div>
-                                            <div class="banner__steps-green-line"></div>
-                                        </div>
-                                        <div class="banner__steps-item d-flex align-items-center gap-1 gap-xl-2 gap-xxl-3">
-                                            <div class="banner__steps-circle-complete-negative d-flex justify-content-center align-items-center"><span>3</span></div>
-                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress-negative banner__steps-future">Get Quotes</span></div>
+                                    <div class="banner__accent-line-second-form"></div>
 
+                                    <div class="banner__steps-diagram-adaptive d-flex justify-content-between align-items-center">
+                                        <div class="banner__steps-adaptive-circle-active">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="banner__steps-adaptive-text-completed d-none d-sm-block">
+                                            <span>Completed</span>
+                                        </div>
+                                        <div class="banner__steps-adaptive-line-active"></div>
+                                        <div class="banner__steps-adaptive-circle-active">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="banner__steps-adaptive-text">
+                                            <span>Search Movers</span>
+                                        </div>
+
+                                        <div class="banner__steps-adaptive-line-active"></div>
+
+                                        <div class="banner__steps-adaptive-circle-disable">
+                                            <span>3</span>
+                                        </div>
+
+                                        <div class="banner__steps-adaptive-text-future-step d-none d-sm-block">
+                                            <span>Get Quotes</span>
                                         </div>
                                     </div>
+
                                     <form class="banner__under-progress-info">
+
                                         <div class="row banner__ds-two-row">
 
 
@@ -555,8 +577,10 @@
 
 
 
+
+
                                         </div>
-                                        <div class="row banner__ds-two-row mt-2">
+                                        <div class="row banner__ds-two-row mt-2 banner__second-form-home-size">
                                             <label for="large-ban" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-size banner__your-move-mg banner__desktop-two-input-pad"><span>How large is your move?</span></label>
                                             <div class="col-md-7 col banner__center-control-input">
                                                 <div class="col">
@@ -569,20 +593,15 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="banner__calculator-btn-submit gap-3">
+
+                                            <div>
+                                                <button class="banner__btn-back" type="button">BACK</button>
+                                            </div>
+
+                                            <button type="submit">LET'S GO</button>
+
                                         </div>
-                                    </form>
-
-                                    <div class="banner__calculator-btn-submit gap-3">
-
-                                        <div>
-                                            <button class="banner__btn-back" type="button">BACK</button>
-                                        </div>
-
-
-
-                                        <button type="submit">LET'S GO</button>
-
-                                    </div>
                                 </div>
 
                                 <!-- -------------- -->
@@ -591,7 +610,11 @@
 
                                 <div class="banner__desktop-three">
 
-                                    <div class="banner__steps-diagram d-flex gap-1 gap-xl-2 gap-xxl-3">
+                                    <div class="banner__accent-line-second-form"></div>
+
+
+                                    <!--
+                                    <div class="banner__steps-diagram d-none d-sm-flex gap-1 gap-xl-2 gap-xxl-3">
                                         <div class="banner__steps-item d-flex align-items-center gap-1 gap-xl-2 gap-xxl-3">
                                             <div class="banner__steps-circle-complete d-flex justify-content-center align-items-center"><span>1</span></div>
                                             <div class="banner__steps-text-desk-two"><span>Completed</span></div>
@@ -599,13 +622,40 @@
                                         </div>
                                         <div class="banner__steps-item d-flex align-items-center gap-1 gap-xl-2 gap-xxl-3">
                                             <div class="banner__steps-circle-complete d-flex justify-content-center align-items-center"><span>2</span></div>
-                                            <div class="banner__steps-text-desk-two banner__steps-control-mid-text"><span class="banner__steps-show-word">Search Movers</span></div>
+                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-show-word">Search Movers</span></div>
                                             <div class="banner__steps-green-line"></div>
                                         </div>
                                         <div class="banner__steps-item d-flex align-items-center gap-1 gap-xl-2 gap-xxl-3">
-                                            <div class="banner__steps-circle-complete d-flex justify-content-center align-items-center"><span>3</span></div>
-                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-future banner__steps-show-word">Get Quotes</span></div>
+                                            <div class="banner__steps-circle-complete-negative d-flex justify-content-center align-items-center"><span>3</span></div>
+                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress-negative banner__steps-future">Get Quotes</span></div>
 
+                                        </div>
+                                    </div>
+                                    -->
+
+                                    <div class="banner__steps-diagram-adaptive d-flex justify-content-between align-items-center">
+                                        <div class="banner__steps-adaptive-circle-active">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="banner__steps-adaptive-text-completed d-none d-sm-block">
+                                            <span>Completed</span>
+                                        </div>
+                                        <div class="banner__steps-adaptive-line-active"></div>
+                                        <div class="banner__steps-adaptive-circle-active">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="banner__steps-adaptive-text-completed d-none d-sm-block">
+                                            <span>Search Movers</span>
+                                        </div>
+
+                                        <div class="banner__steps-adaptive-line-active"></div>
+
+                                        <div class="banner__steps-adaptive-circle-active">
+                                            <span>3</span>
+                                        </div>
+
+                                        <div class="banner__steps-adaptive-text">
+                                            <span>Get Quotes</span>
                                         </div>
                                     </div>
 
@@ -706,7 +756,7 @@
                             <div class="work__title-case">
                                 <h2>How Does It Work</h2>
                             </div>
-                            <div class="banner__accent-line"></div>
+                            <div class="banner__accent-line work__adaptive-accent-line"></div>
                             <div class="work__features-wrapper d-flex justify-content-center flex-column flex-md-row">
                                 <div class="work__features-case d-flex flex-column align-items-center">
                                     <div class="work__icon-wrap d-flex justify-content-center">
