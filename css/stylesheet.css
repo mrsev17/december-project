@@ -243,7 +243,7 @@ a {
 }
 .banner__btn-back:hover {
     transition: .5s;
-    border: 2px solid #0B7AB3;
+    border: 1px solid #0B7AB3;
     color: #0B7AB3;
 }
 .banner__calculator-btn-submit > button:hover {
@@ -304,7 +304,7 @@ a {
     background-color: transparent;
     outline: none;
     border: 1px solid #216F5A;
-    padding: 11px 13px;
+    padding: 9px 13px;
 }
 .banner__zip-code-input:focus,
 .banner__state-input:focus {
@@ -330,6 +330,9 @@ a {
 
      */
     gap: 8px;
+}
+.banner__center-control-input {
+    width: 58.28%;
 }
 .banner__modal-desktop-form-seven {
     width: 100%;
@@ -525,7 +528,9 @@ a {
 .table-three-title {
     background-color: #16495D;
 }
-
+.services__title {
+    margin-bottom: 12px;
+}
 .services__title > h3 {
     text-align: center;
     font-weight: var(--medium-weight);
@@ -615,13 +620,97 @@ a {
     max-width: 1440px;
 }
 
+/* Styles for calendar */
+
+.calendar > p {
+    width: 100%;
+}
+.calendar > p > input {
+    width: 100%;
+    border: 1px solid #22856A;
+    border-radius: 8px;
+    padding: 15px 12px;
+    background-color: transparent;
+    outline: none;
+}
+.calendar {
+    max-width: 58.25% !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.calendar-label {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+.ui-datepicker {
+    width: 100%;
+    max-width: 24.3%;
+    margin-top: 8px;
+    padding: 0 18px;
+    border: 1px solid #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.ui-datepicker-header {
+    background-color: #ffffff !important;
+    border: 1px solid transparent;
+}
+.ui-datepicker-year {
+    display: none;
+}
+.ui-datepicker-calendar > thead > tr > th > span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.ui-datepicker-calendar > tbody > tr > td > a {
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+    font-size: 16px;
+    text-align: center;
+}
+.ui-state-active {
+    background: #22856A !important;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+
+}
+.ui-datepicker-prev {
+    background-image: url("../assets/icons/chevron-left.svg");
+}
+.ui-datepicker-next {
+    background-image: url("../assets/icons/chevron-right.svg");
+}
+.ui-datepicker-current-day {
+    background-color: #22856A;
+    border-radius: 50px;
+    width: 18px;
+    height: 20px;
+}
+.ui-state-highlight {
+    color: #333333 !important;
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em 0 0.2em;
+}
+
 /* Adaptive design */
 
 @media(max-width: 1200px) {
     .banner__steps-progress {
         font-size: 20px !important;
     }
-
+    .banner__mg-control-input {
+        margin-right: 0;
+    }
     .container {
         padding: 0 12px;
     }
@@ -635,7 +724,12 @@ a {
     }
 }
 @media(max-width: 992px) {
-
+    .ui-datepicker {
+        max-width: 51.4% !important;
+    }
+    .calendar-label {
+        top: 16px !important;
+    }
     .banner {
         background-image: none;
         background-color: #F1F0EB;
@@ -703,7 +797,7 @@ a {
         justify-content: center;
     }
     .reviews__left-title {
-        margin: 0 auto;
+        margin: 0 auto 12px;
     }
     .reviews__mark-wrapper {
         align-items: center;
@@ -743,11 +837,21 @@ a {
     }
 }
 @media(max-width: 768px) {
-
+    .calendar {
+        max-width: 100% !important;
+    }
+    .ui-datepicker {
+        max-width: 89.275% !important;
+    }
+    .ui-datepicker-prev {
+        left: 480px !important;
+    }
     .modal__center-control-input {
         width: 100% !important;
     }
-
+    .banner__center-control-input {
+        width: 100%;
+    }
     .banner__steps-text-desk-two span {
         display: none;
     }
@@ -815,7 +919,27 @@ a {
         display: none !important;
     }
 }
+@media(max-width: 630px) {
+    .ui-datepicker .ui-datepicker-prev {
+        left: 410px !important;
+    }
+}
 @media(max-width: 576px) {
+    .ui-datepicker .ui-datepicker-prev {
+        left: 225px;
+    }
+    .ui-datepicker {
+        max-width: 95% !important;
+    }
+    .ui-datepicker td {
+        padding: 5px !important;
+    }
+    .ui-datepicker .ui-datepicker-title {
+        margin: 0 2.3em 0 0.2em;
+    }
+    .calendar {
+        padding: 0;
+    }
     .header__logo-icon {
         padding-left: 13px !important;
     }
@@ -849,6 +973,7 @@ a {
     .modal__calculator-form-two {
         max-width: 100% !important;
     }
+
     .banner {
         border-top: none;
         border-bottom: 2px solid #000000;
@@ -1021,6 +1146,31 @@ a {
     .banner__modal-desktop-btn-seven {
         margin: 0;
         width: 100% !important;
+    }
+}
+@media(max-width: 1344px) {
+    .calendar-label {
+        top: 30px;
+    }
+}
+
+@media(max-width: 514px) {
+    .ui-datepicker .ui-datepicker-prev {
+        left: 360px !important;
+    }
+}
+@media (max-width: 478px) {
+    .ui-datepicker .ui-datepicker-prev {
+        left: 230px !important;
+    }
+}
+@media (max-width: 360px) {
+    .ui-datepicker .ui-datepicker-prev {
+        left: 190px !important;
+    }
+    .ui-datepicker {
+        max-width: 92.5% !important;
+        height: 288px;
     }
 }
 @media (min-width: 768px) {
@@ -1366,5 +1516,6 @@ a {
     max-width: 84%;
     margin: 29px auto 0;
 }
+
 
 
