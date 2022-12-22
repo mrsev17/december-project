@@ -858,7 +858,7 @@ a {
 
 @media(max-width: 992px) {
     .desktopdatepicker {
-        max-width: 43.5%;
+        max-width: 42.95%;
     }
     .calendar-label {
         top: 12px !important;
@@ -972,18 +972,23 @@ a {
 }
 @media(max-width: 768px) {
     .modaldatepicker {
-        max-width: 78% !important;
+        max-width: 80% !important;
         max-height: 310px !important;
     }
     .modaldatepicker > .ui-datepicker-header > .ui-datepicker-next {
         margin-left: 0;
     }
-    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev,
-    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-next {
+        margin-left: 50px;
+    }
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev {
         margin-left: 206px;
     }
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        margin-left: 278px;
+    }
     .desktopdatepicker {
-        max-width: 88.9%;
+        max-width: 90.5%;
     }
     .calendar {
         max-width: 100% !important;
@@ -992,9 +997,6 @@ a {
         top: 14px;
     }
 
-    .ui-datepicker-prev {
-        left: 480px !important;
-    }
     .modal__center-control-input {
         width: 100% !important;
     }
@@ -1061,14 +1063,26 @@ a {
 }
 @media(max-width: 576px) {
     .modaldatepicker {
+        max-width: 95.3% !important;
+    }
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-next {
+        margin-left: 50px;
+    }
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        margin-left: 120px !important;
+    }
+    .modaldatepicker {
         left: 12px !important;
     }
-    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev,
-    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
-        margin-left: 146px;
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        margin-left: 134px !important;
+    }
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-next,
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-next {
+        margin-left: 0 !important;
     }
     .desktopdatepicker {
-        max-width: 95.2%;
+        max-width: 95.8% !important;
     }
     .ui-datepicker .ui-datepicker-prev {
         left: 225px;
@@ -1439,6 +1453,9 @@ a {
     }
 }
 @media (max-width: 478px) {
+    .modaldatepicker {
+        max-width: 94.5% !important;
+    }
     .ui-datepicker .ui-datepicker-prev {
         left: 230px !important;
     }
