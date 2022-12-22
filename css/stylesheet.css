@@ -1443,7 +1443,6 @@ a {
 @media(max-width: 1344px) {
     .calendar-label {
         top: 14px;
-
     }
 }
 
@@ -1453,9 +1452,11 @@ a {
     }
 }
 @media (max-width: 478px) {
-    .modaldatepicker {
+    .modaldatepicker,
+    .desktopdatepicker {
         max-width: 94.5% !important;
     }
+
     .ui-datepicker .ui-datepicker-prev {
         left: 230px !important;
     }
