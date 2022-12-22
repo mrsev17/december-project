@@ -406,7 +406,10 @@ margin-bottom: 52px;
 .work__features-wrapper {
     gap: 78px;
 }
-
+.work__icon-wrap img {
+    width: 72px;
+    height: 80px;
+}
 .work__features-title {
     margin-top: 18px;
 }
@@ -474,9 +477,12 @@ margin-bottom: 52px;
     font-weight: var(--medium-weight);
 }
 
-
 .reviews__carousel-indicators {
     bottom: -100px;
+}
+.reviews__marc-case img {
+    width: 25px;
+    height: 25px;
 }
 .reviews__carousel-indicators > button {
     width: 10px !important;
