@@ -1,3 +1,23 @@
+// Jquery code for datepicker
+
+$( function() {
+    $("#datepicker").datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    });
+    $("#datepicker").datepicker( "setDate", 7);
+} );
+$( function() {
+    $("#datepickerModal").datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    });
+    $("#datepickerModal").datepicker( "setDate", 7);
+} );
+
+
 // Logic for control panel with test buttons
 
 "use strict";
@@ -34,7 +54,6 @@ const showThirdDesktop = () => {
     desktopSecondWrapper.style.display = "none";
     desktopThirdWrapper.style.display = "block";
 }
-
 
 desktopFirstButton.addEventListener("click", showFirstDesktop);
 desktopSecondButton.addEventListener("click", showSecondDesktop);

@@ -1,3 +1,7 @@
+/* connect fonts */
+
+@import "../fonts/stylesheet.css";
+
 /* Reset CSS */
 
 @import "../fonts/stylesheet.css";
@@ -52,41 +56,6 @@ a {
     text-decoration: none;
 }
 
-/* Connect fonts */
-
-@font-face {
-    font-family: 'Nunito Sans';
-    src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
-    url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
-    url('../fonts/NunitoSans-Regular.woff') format('woff'),
-    url('../fonts/NunitoSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito Sans';
-    src: local('Nunito Sans SemiBold'), local('NunitoSans-SemiBold'),
-    url('../fonts/NunitoSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/NunitoSans-SemiBold.woff') format('woff'),
-    url('../fonts/NunitoSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito Sans';
-    src: local('Nunito Sans Black'), local('NunitoSans-Black'),
-    url('../fonts/NunitoSans-Black.woff2') format('woff2'),
-    url('../fonts/NunitoSans-Black.woff') format('woff'),
-    url('../fonts/NunitoSans-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
 /* CSS Variables */
 
 :root {
@@ -125,6 +94,10 @@ a {
     max-width: 538px;
     width: 100%;
     margin-left: 24px;
+}
+
+.modal-header button {
+    opacity: 1;
 }
 
 
@@ -210,7 +183,7 @@ a {
     margin: 0 auto 12px;
 }
 .banner__accent-line {
-    margin: 0 auto 64px;
+    margin: 0 auto 14px;
 }
 .banner__accent-line-second-form,
 .modal__accent-step-search {
@@ -274,9 +247,6 @@ a {
     background-color: #0B7AB3;
 }
 .banner__benefits-wrapper {
-    /*
-    margin-top: 55px;
-     */
     gap: 48px;
 }
 .banner__benefits-case {
@@ -305,11 +275,8 @@ margin-bottom: 52px;
     font-size: 22px;
     width: 9%;
 }
-.banner__steps-diagram {
-    margin-bottom: 39px;
-}
 
-/* 17.12.2022 - Banner */
+
 
 .banner__zip-code-input {
     color: #707070;
@@ -358,14 +325,12 @@ margin-bottom: 52px;
     margin: 0 auto;
 }
 .modal__calculator-step-one-submit {
-    margin-bottom: 32px;
+    margin-bottom: 20px !important;
 }
 .banner__under-progress-info {
     margin: 0 auto;
 }
-.banner__steps-circle-complete span {
-    margin-bottom: 0 !important;
-}
+
 .banner__arrow-wrapper {
     position: relative;
 }
@@ -425,6 +390,12 @@ margin-bottom: 52px;
 }
 .work__title-case {
     margin-bottom: 12px;
+}
+.work__accent-line {
+    width: 150px;
+    height: 3px;
+    background-color: #0B7AB3;
+    margin: 0 auto 49px;
 }
 .work__title-case > h2 {
     text-align: center;
@@ -623,7 +594,6 @@ margin-bottom: 52px;
     padding: 9px 12px;
 }
 
-
 .services__item-text-movers {
     background-color: #EEEEEE;
 }
@@ -803,15 +773,14 @@ margin-bottom: 52px;
 }
 
 /* Adaptive design */
+
 @media(max-width: 1400px) {
     .ui-datepicker {
         max-width: 24%;
     }
 }
 @media(max-width: 1200px) {
-    .banner__steps-progress {
-        font-size: 20px !important;
-    }
+
     .banner__mg-control-input {
         margin-right: 0;
     }
@@ -832,6 +801,7 @@ margin-bottom: 52px;
 }
 
 @media(max-width: 992px) {
+
     .ui-datepicker {
         max-width: 43.75% !important;
     }
@@ -842,13 +812,6 @@ margin-bottom: 52px;
         background-image: none;
         background-color: #F1F0EB;
         padding-bottom: 20px;
-    }
-    .banner__steps-item,
-    .banner__steps-diagram {
-        gap: 12px !important;
-    }
-    .banner__steps-diagram {
-        justify-content: center;
     }
     .banner__wrapper-state-city {
         max-width: 546px;
@@ -956,20 +919,11 @@ margin-bottom: 52px;
         width: 100%;
         margin: 0;
     }
-    .banner__steps-text-desk-two span {
-        display: none;
-    }
-    .banner__steps-control-mid-text span {
-        display: none !important;
-    }
 
     .banner__searching-description h2 {
         font-size: 28px;
     }
-    .banner__steps-show-word {
-        display: block !important;
-        font-size: 16px !important;
-    }
+
     .banner__ds-two-row {
         flex-direction: column;
     }
@@ -977,14 +931,7 @@ margin-bottom: 52px;
         margin: 0 auto;
     }
 
-    .banner__steps-circle-complete span,
-    .banner__steps-text-desk-two span {
-        font-size: 16px;
-    }
-    .banner__steps-diagram,
-    .banner__steps-item {
-        gap: 5px !important;
-    }
+
     .reviews__right-carousel {
         margin-top: 10px;
     }
@@ -1027,6 +974,7 @@ margin-bottom: 52px;
     }
 }
 @media(max-width: 576px) {
+
     .ui-datepicker .ui-datepicker-prev {
         left: 225px;
     }
@@ -1044,6 +992,7 @@ margin-bottom: 52px;
     }
     .calendar-label {
         right: 8px;
+        top: 9px !important;
     }
     .header {
         padding: 5px 0 0;
@@ -1052,14 +1001,27 @@ margin-bottom: 52px;
     .header__logo-icon {
         padding-left: 13px !important;
     }
+    .modal-body {
+        padding-bottom: 12px;
+    }
     .modal__gap-control-steps {
         gap: 5px !important;
     }
     .modal__control-width-mobile {
         max-width: 100% !important;
+        margin-bottom: 16px;
     }
     .modal__last-step-gap-control {
         gap: 12px !important;
+    }
+    .modal-footer {
+        margin-bottom: 12px !important;
+    }
+    #modalwrapperthird {
+        margin-bottom: 0;
+    }
+    #datepickerModal {
+        padding: 8px 12px;
     }
     .banner__btn-back {
         padding: 8px 22px !important;
@@ -1067,16 +1029,13 @@ margin-bottom: 52px;
     .banner__steps-diagram-adaptive {
         margin-bottom: 24px;
     }
-    .banner__steps-adaptive-circle-active,
-    .banner__steps-adaptive-circle-disable {
 
-    }
     .banner__steps-adaptive-circle-active span,
     .banner__steps-adaptive-circle-disable span {
         color: #ffffff;
-        padding: 5px 12px;
+        padding: 4px 11px;
         border-radius: 50px;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 25px;
         font-family: "Nunito Sans", sans-serif;
     }
@@ -1123,7 +1082,7 @@ margin-bottom: 52px;
         padding: 0;
     }
     .banner__sub-info > p {
-        width: 80%;
+        width: 92%;
         text-align: center;
         font-size: 16px;
         line-height: 22px;
@@ -1151,9 +1110,7 @@ margin-bottom: 52px;
     .banner__adaptive-control-pad {
         padding: 0 12px 0 12px !important;
     }
-    .banner__steps-green-line {
-        width: 25px;
-    }
+
     .modal__mobile-label-second-step {
         width: 50% !important;
     }
@@ -1217,13 +1174,19 @@ margin-bottom: 52px;
     .modal__description {
         font-size: 16px !important;
     }
+    .modal__accent-step-search {
+        margin: 0 auto 24px;
+    }
+    .modal__steps-diagram {
+        margin-bottom: 24px;
+    }
     .banner__main-title {
-        margin: 24px 0 0 0;
+        margin: 12px 0 0 0;
     }
     .banner__main-title > h1,
     .banner__main-title > h2 {
         text-align: center;
-        font-size: 20px !important;
+        font-size: 19px !important;
     }
     .modal-body {
         padding-top: 0;
@@ -1235,6 +1198,9 @@ margin-bottom: 52px;
     .modal__label-text {
         font-size: 18px !important;
     }
+    .modal__accent-line {
+        margin: 0 auto 20px;
+    }
     .banner__calculator {
         min-height: auto;
     }
@@ -1242,9 +1208,7 @@ margin-bottom: 52px;
     .reviews__right-carousel {
         margin-top: 40px;
     }
-    .banner__steps-diagram {
-        margin-top: 0 !important;
-    }
+
     .banner__desktop-two-input-pad {
         padding: 0 0 4px 0;
         font-size: 18px;
@@ -1401,62 +1365,14 @@ margin-bottom: 52px;
 
 }
 
-
 /* Banner calculator desktop steps containers control */
 
 .hidden {
     display: block;
 }
-/*
-.banner__desktop-one {
-    display: none;
-}
-.banner__desktop-two {
-    display: none;
-}
-.banner__desktop-three {
-    display: none;
-}
-*/
+
 /* ====================== */
 
-
-.banner__steps-circle-complete span,
-.banner__steps-text-desk-two span {
-    font-size: 22px;
-}
-.banner__steps-circle-complete,
-.banner__steps-circle-complete-negative {
-    color: #ffffff;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-}
-.banner__steps-circle-complete span,
-.banner__steps-circle-complete-negative span {
-    margin-top: 3px;
-}
-.banner__steps-circle-complete {
-    background-color: #22856A;
-}
-.banner__steps-circle-complete-negative {
-    background-color: #717171;
-}
-.banner__steps-circle-complete-negative span {
-    font-size: 22px;
-}
-
-.banner__steps-future {
-    color: #717171;
-}
-.banner__steps-green-line {
-    width: 20px;
-    height: 1px;
-    background-color: #22856A;
-}
-.banner__steps-progress {
-    color: #22856A;
-}
 
 .banner__searching-description h2 {
     text-align: center;
@@ -1484,9 +1400,6 @@ margin-bottom: 52px;
 /* Animation for banner loading */
 
 .lds-spinner {
-    /*
-    color: official;
-    */
     display: inline-block;
     position: relative;
     width: 80px;
@@ -1564,8 +1477,6 @@ margin-bottom: 52px;
     }
 }
 
-
-
 /* Styles for hidden panel with buttons for test different forms and popups */
 
 .hidden {
@@ -1591,6 +1502,7 @@ margin-bottom: 52px;
 }
 
 /* Styles for modal group */
+
 .modal-header button {
     padding: 1px;
     background: url("../assets/icons/modal-cross-cancel.svg") center;
@@ -1635,10 +1547,6 @@ margin-bottom: 52px;
     width: 65%;
 }
 .banner__modal-desktop-form-seven {
-    /*
-    max-width: 466px;
-    */
-
     margin: 30px auto 0;
     gap: 10px;
 }
@@ -1659,7 +1567,6 @@ margin-bottom: 52px;
 .banner__modal-input-desktop-seven {
     font-size: 18px;
     padding: 12px 22px;
-
 }
 .banner__modal-desktop-sub-seven p,
 .banner__modal-desktop-sub-two-seven {

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -15,25 +15,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-        $( function() {
-            $("#datepicker").datepicker({
-                showOtherMonths: true,
-                selectOtherMonths: true,
-                dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-            });
-            $("#datepicker").datepicker( "setDate", 7);
-        } );
-        $( function() {
-            $("#datepickerModal").datepicker({
-                showOtherMonths: true,
-                selectOtherMonths: true,
-                dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-            });
-            $("ui-datepikcer").datepicker("background-color", "yellow");
-            $("#datepickerModal").datepicker( "setDate", 7);
-        } );
-    </script>
 
     <title>Long Distance</title>
 </head>
@@ -44,9 +25,7 @@
 
             <nav class="navbar p-0 navbar-expand-lg bg-light">
                 <div class="container-fluid p-0">
-
                     <a class="header__logo-icon p-0 navbar-brand" href="#">
-
                         <svg width="240" height="35" viewBox="0 0 240 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="240" height="35" fill="url(#pattern0)"/>
                             <defs>
@@ -56,46 +35,17 @@
                                 <image id="image0_150_11802" width="1228" height="180" xlink:href="data:image/jpeg;base64,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v//aAAwDAQACAAMAAAAQ8888888888888888888888888888888888888888888888888888888888888888888888IAAAAADw3888888888888888BBAf8AFVPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPKKfPPPPPAwwwyQ4WfPPPPPPPPPPPPPPLAyGNW9fPPPAwPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPOZvPPPPPPPPPAA6v8AzzYDfwDUHnzpFtdQPy+OxfFRQWYNMEtPgM8dXssyOttBatOMu5LquRAe8MsBoj4lfzA4stNXwAOr/wA8C88qp+8alr8XXUD8UD+XwYawDA8oAAiBB5ADQ8k5DDgBA8JcXGyZ+aFQ9T8r+qQ8gCLpFV8ADq/84C88ipr8AVz8XXUD8qR+Xl3AXDA8gLJCBBqAFA86kXNPqA8r+UDOl+mcrb58r+qA8ABr+TVsADCvP2eAM8Al+vL6B9CzQUYeTQzVUVGLJKnrXAErTCn0Evqg4hA8g0bQoYET8WEt7gjrT2DVAjAV88L888888888888888WP88888888888888888888888888888888888888888888888888888C77S88m8888888888888aht888888888888888888888888888888888888888888888888888888NkD8888888888888888888888888888888888888888888888888888888888888888888888xTeHnr3u888888888888888888888888888888888888888888888888888888888888888888888SNXd3rVV88888888888888888888888888888888888888888888888888888888888888888888/ffDjhAdf888/8QAJxEAAgICAQMDBQEBAAAAAAAAAAERMRAhQSBR8FBgYTBAgZGxweH/2gAIAQMBAT8Q9ioSGMaH1IaHDYwhP7D5z5z5xNPaw97CCm/SGFJj1vqISGR7ke5HuR74AhZ2iF+wJi07HtCGehCpBpNQxIcrpvKvQmxyxJJQvp2CLCjKZDYg2SXHd4ThanDdznJOfQlcj4FVRZiJpmxodOGigXMHmyHcG6CTMSbcIbs+BZlLQ60bZFQFD5BTYdsG0lLHOqPgGY2kpY51RBuByfATRIThyPt4Hso1Y2j9lipGM4ZZGtg5pQxoQ9BhaXIxoZQPvHWKXGMJREkexLZXRVWCLCjOu3ms6DXmi/Pq4eJCW6CqizFUWFhQS6Dp2qGLYvSy8qw6wS1EkrFhdH+QksVjNRIicOblBogJmKTynEzPKQxQLTLCREXMQkMrFtyJmiHWLCguK8auVjSzFJRVZrBFhRhonBrt5rOgl5ovz/1CTAaY9BVRZhUS4LRYUC5hpWiDOg6ZF5Vh8zH5JJCxYXR/kXFYkzIicNYkyETRUz7UQzYUFUWECMuQhJZYkKDe9yYEKfdiwoLivFxX5yLEBCWiqzLsxCWBabA0S0JgNCjoUd3hOFMwgSIU0KnBCjQncEejBYDKEupHu9IQkIYbiMaUO4mM5HoMac0JYMNjxyPeVWGQgSEqGkhpoScBNpyh5HOqJNSNJoNJqGPdUJHOEGMYNM1oY0sjOI12MJFqM5ZRGp4Nr2LwR86GNLEE4iDLQm05Qvm/+jGliicR7EtFCaySEhjmh/YRRJQo9WjzGGTqiDbLS31ktJ5EUHq6SGNW9M74K9jMXVjzDn9G8VjKk5/QrLG3v40OEuPghvYzWOzGnHsFC5Cfmy3zkXn8lPsVl/nOKzKf2CF30f/EACcRAQACAwABAwMFAQEAAAAAAAEAERAhMUEgUWFQYPAwQJGxwYHh/9oACAECAQE/EPsVFZAFnqYMWEEtP2Hwz4Z8MRO4MyEKH0gCpDc9RFZLe0t7S3tLe2EMdIx7n7BrCQBbCWxRqIKbItp9PGdvoQWiKu39PhGcJ2y6qaFhyMD2kQqRFDPGYlLtxb4gwK6ZyxYJNAxweU6RqkM1LdXN4RQIoFsJFRAc5oBuaZnZRA8ERqC0QFaIDvs+TCgrUJ32WauElxTFiWVDphmmbuNMHRyNQQKycMIIAQAthrOHe8QBZOkGb7monIQmmWKhwOi+iq4RnCds7eWwP5uc8uzIbpHx6K6Zyx0zlOE6SnUKkYDhE2E4ztgpBVuv6lLwuGf7R0J3gu8sawIKqG7RKjU/KsVVcuxOkXScoaTOBEVk7i0ZbRl7jhOk4ztjYzrBQJYs6c3CM4TtgSXNvLYX83OeX+pHVoat6K6Zywlj5nCOE6TVJthlitodTOM7YOog6aS54XDP9pxneKqywrAsdViRPWdG7Z4TpOmco7RODEVE5Fbc0vtKHF6YcJ0nGd8cp1ju0RRnTmXMYwQqcQkGOrmxYdnA9pEalnSWKiFGNS5YDcS8y90wcSB1KN1BNdiK2CDzgCmEsIHUNyAK6wQHUEKgGns6YsYYL2AUQW2KLRBKYchu+yjdQBXUFGyA7injCG9cCA8wBRLDzguoRTOPAqJ0wkwa2cm4h1MAURQ+ccH2IJTH4P8A8gCiOHzgiDsse5JFZCFn7CycW/q1qsVTcv0yLj9ZTU/IzofV0LIKtk5mvscHvkNQV/M0jyBqFfzE0oNb/wBhYS/mW32M3v3Rip0+6PG4PzU5xnt9ik5+mG/qRjg9H//EACwQAAECBAYCAQQDAQEAAAAAABEAARBRYXEhMUHB0fAgsYEwkaHxQGDhcFD/2gAIAQEAAT8Q/wCFn5x/41zqfj/6HYrFYrFYrHxbFd1CTE+iJDM+oQAPb+n5H1CET6IkO6hJAPZPh9Q/OK7p+66fuun7rp+66fuun7rp+66furnJN/B7YSArmiSJAvpoZQPb+dfJqESRJEkSRJW6TI/vcE0aXgzf1UAAHb6joNJBpINJBpINJBpINJBpJrM4eFdfMSNi4MYXvNcoob2kuGwBq8/5xWIA6WXGJAVefm9gfYoXZrHYAVWa0Tm+ARVpIknNsAGrz+jqs39F5Ob4BFWkiSc2wAavNafxc3gsIFm/8BOt/aBn5fJ4IM7XExI2r9bSVecC3/bAFlYaQZk/0dVm/ovJk7Q0/i5vBawLMs/i6vg1C3SRPCrQf3jDKHWf0gaprqeiQcoE++RuaSu3lAG5aCSiTgtv0qH5aSu3lAG5fvSyuaNlkxJpSL+Q+MAUea5JIimSs3nJOxYrZw+XmnnflFPv5K54bMW/tDNEckEbmlCxOQA8rB9PqSTx5+DvpeByrnEiKNKFicgB5XHMA1zRvWoyYeT2Tg/xUBR5rkOiKZLkwiKNKHBhA0ea2qSbQNSs8R7WBNdYkTHNcmERRpQ4OIGuaIbo9SSeIv8AT0ajwVzExI2RsLkAO5OdNxpEGCf6ejUeCu8nJGyFumoXHMA1zWGtlJiTSizR+kE8k7iMtIHKue4Io0obaEA70/tcAUea5MAiiUP3tJR5o/oAZAPaOGwJqpdCnkwiKNKHGJA0eaPyQpZy2H1wNw8M0f7+Apf5vJ4VfpqVbpqFtAUs8HDMtl4ByLnuCKNKBX4CA5V7+T4wzeC1gWZZ/Lntjakj24iuDMsE09zd1BYJcRppLlHm+2RNGksFnT2OABpVddUTFMIF7P3rbh+keaUNrSW2zAvrDBSAuBsSVzkxIpRZ4bMW/tDNEPi5X6aCGigTod2IMgHsumBJifSIaIn1yFjzhYnMSeIBcXIAN0f5/o2JL9bSVecOTCJq0oAyzQdnExJ2QC5yQAVrA38Jeie3siKtJGTSUAboY7Amq5JAmrSgFycgA5gbnnowWi47ICjzVycxI4hbJOl8ksVsmpXFZAUeauTmJHEQv3pAVThxSgteaO6VGbBDGaiUAbo8mUTVpQDDYk0hcnMSOFiMgVfvSAqnDjuAaPNBPgBWG85JtpDnEiatKAcdwBV5wnUps5zkxIrRGs6scRPpDoPibDkncT7MA1eaO9sjYlFx2Q/fjNHdiDIB7LpgSYn08Aecdf8AkC/NdeYTk+kMdgTVWFzEnYsBmMYtn3kTbRargsha84Y7ECkA4MoCrz8gzeC1gWZZ/HaoAClVyRxuaXjufibqLaB+kM1q/XyVbKJ7PiSnvIEDzy+IAClV6psRNpJotFrpMiZ4bMW/tDNEZi39oZkNfAAZTcYkGeG1SAurD9Vm8eRHdozaUA9AwAPK/CK+yTBppMyMu74jjJDQQK/KXt4OU/7nJspDksjc0o8P4LnnDZ3RemqekOReNzSRqmAyBX6aCD2H8wJNKLu+I2yaCGxSAurD1Lkn/EMX1+hJHCw2JNIHu+ZKPY3xAAUqsNgBWHBhA1ecObKNzShYnIAeVisAKp1/5wJupDjuAaPOGDfjgWvOHL+G9peYA8besgxbEwD/AHA7CBOuq9w5J/zCRh3YwEbECi9LAl4hm8FrAsyz+PtpC+mk/QA+a2HrZR7viBaIzCSy/XyV0jpCM8NmLf2hmiMxb+0MyGvgAZIXjSVaS4xICrzhbhKr5ZAjmmCaNJMy1Wbx5OuK6AqmiWJLN+7AQPaIMu74i2njZyWi5X2SIgyCX0Xzod3x9EAyOt/aIHfdIh1gDkmyaN+mghooE6Zrgjhc84Et+4ibKLepE2UhtkwLq+YA/wBCzlnX1Xd8QMxktDfJ13fEQwGBhm8FrAsyz+PppK+2kfQA+a3x9z9tIkZjAZeiEzeHSEZ4bMW/tDNEYY+ckAFKx9PAmtfEAKvA0Kf3kCKZLNPtQBVNcGEBV5wxV9qs3jy3UULqbiQIST+N3YGT6RBl3fEdE/hZ9IuV90nwGqzaL/vaSrS8QAAPd9nAf6Xd8fRAMxb+0MyB32SYdIJ5JsmjfpqYFYyZYMft/KG/Q9Fz3BFGksdiBRYw2UkANa+YA/0LOWZfVawTw8IfJ13fHgH3Hx7WBZlnjhOr1AA5Tu/UTRpLeoEitFwRwsefi96hgWVW8D9oZrfH3P20iWdfMCRWi4/wWPNNlHSEZ4bMW/tDNEbqKFzexuaSbBlr4AGiN9Cha84Af7uGxpQZzAJYLfNRNarN48tEAmtECpuM8QMu74jon8bPtvgLqw4IYWPOP5r0gDQAOS23wF1Yd20yeaDIMgyaoTUoLq+PogGYt/aGZB7G+YEitFhsSaQ5MImjSgV6ZCx5wsTmJPCx2JNIcmERVpQ4LYWPOHLcG9pJsvMAf6FnLMvqvWQINzeTZSD5OvawZeIPe+BN9PAs0CzQ2Cw8A3jthemjXfeaizrJfpaSjzVxGuksEeb6ZA1eawWeD1oOu74gRCddykTeaIdkq42pIssF1dRMU0QA62WdbDYE1QfokBXNX6amFhcgB3QC7iYkbIWJzEnhFdRDMT6Qcd1qMxTpgSQD2h0wJMT6LqaiQIdiAkg4JAGjzgHJIEUaUObyNzSgWX38NzShY5IAaVgBDPliSeFx/guecOCQBo84BfpqYcGEDR5rvcCUD2U+mM4d1UYQj+s2gCjzRfWIyCD97SUeac3kCaJJ7cyIq0lcnIAOYYjMVXcTEjZDqUibSWi57IirSVycgA5hZxIAd0Au4mJGxcKsLXmjG6vUADlH5hjP7GkpkuDyAo810wJIB7Q6YEmJ9E7vZE0aSB4klc1fpqYbRJOEtlJiTSiM/DIF9YcYkDR5wDnuCKNKEqiLBcPwLnnE30KF7zTQd6ajUU6YEkA9odMCTE+icd1qMgQP0yAo812mxKOUP3tJR5rqaiQJ+prKPNd2YSAe0HnObu/xDbkuWwJo0lyJBvaULdNRAL96xFEvMD84x7YhgWVXJhEUaS4pgGjz8O7rt5yRshrq+DQor8JAcqtB/WOc4dZ/WJokup6JjwgT65Cx5q7eckbFx3ANHmt26SdkDGfLAD/Sw2QIsTkAPMOGfACq5rIirSXGYAVTVqEiW6VD8NJbxKDGdbf28rdNCrfJiTtRvWozc/QEWCxAon35AU/raSrzhbpoVyYRNMljmLYAavOF4mhXHlAVzhjsQKI/7JCG9sDIB7LgygKvOHJIE1aScxsj+8z8/wC75Wfx4NkncHsgAcld5KAN0MdiBRc8wTTJY5i2gGrziT0uMgS6+QAbo2cTEnYn9uIGufjG3v5Bnd8eGZTAYgUU+lTwYQFXnDnEiatJH5pUswbCJW5+JupCxOYk8K0TQfwiKCAHDspOC25yQAVrDIfvYbMl1fHkDqfj/wCBzuGdexck/wCF62BP+2u7MiyLJ1jfxEBR5rDYAVhizfAgLq+Ltgj/AJcvk1Cx2AFY9YkTTXKrG9pf213LL3Dkn/KxGYwg/W0lGlDkVDe0kMB5Y/y+hSJtJdoMPl5w69CZOXoJpknNmIGrz/trsim/YQHKuMSAq84WOTEmtFzLhsyREr0AB5/8LNBkGkg0kP7gGQZtEzNL/h/FZAUeawmco5ZAmmUMB/AQFHmsNnKP2pZTJcBkBR5okMh9Ulc05vhE0yXU1ExR3KYcxJ2K0TU/8MOBWiXvqAnF1A1eaMb+LBc804Je0/1A5LjcgavNcRkL00Sz8hGxpLVCZF7Lom80czGtguealwdOK3cZN9EYz5Yk/wCP+GPk/gD5PAMlmia3YhOeLBW/4W+S1S19wUe3QiaNJS0EmsE8l6T/AHB4IP2yJo0lzCRtSRPoELnnDdiE54sFb/hLLcg+TwEZkN76LgRR1fPn/9k="/>
                             </defs>
                         </svg>
-
-                        <!--
-                        <img class="header__logo-icon" src="assets/icons/logo-navbar.svg" alt="Logo" title="Logo">
-                        -->
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="header__collapse-menu collapse navbar-collapse" id="navbarSupportedContent">
-
-
                         <ul class="header__list-navbar navbar-nav me-auto mb-2 mb-lg-0">
-                            <!--
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            -->
-
                             <li class="header__mid-sub-wrapper nav-item">
                                 <p class="header__mid-sub">Long Distance Moving - We are The Best!</p>
                             </li>
                         </ul>
-
 
                         <div class="header__right-side-wrapper d-flex">
 
@@ -106,12 +56,6 @@
                             <div class="header__phone-call-wrapper">
                                 <a href="tel:8009604060">800-960-4060</a>
                             </div>
-
-                            <!--
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                            -->
-
                         </div>
                     </div>
                 </div>
@@ -276,7 +220,7 @@
                                                         </form>
                                                         <div class="banner__calculator-btn-submit modal__calculator-step-one-submit">
 
-                                                            <button type="submit"disabled>LET'S GO</button>
+                                                            <button type="submit">LET'S GO</button>
 
                                                         </div>
 
@@ -312,30 +256,37 @@
 
                                                 <div class="banner__form-wrapper">
 
-                                                    <div class="banner__steps-diagram d-flex modal__gap-control-steps justify-content-center">
-                                                        <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
-                                                            <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">1</span></div>
-                                                            <div class="banner__steps-text-desk-two"><span>Completed</span></div>
-                                                            <div class="banner__steps-green-line modal__steps-green-line-form-two"></div>
+                                                    <div class="banner__steps-diagram-adaptive d-flex justify-content-center gap-1 gap-sm-2 align-items-center">
+                                                        <div class="banner__steps-adaptive-circle-active">
+                                                            <span>1</span>
                                                         </div>
-                                                        <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
-                                                            <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">2</span></div>
-                                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-show-word">Search Movers</span></div>
-                                                            <div class="banner__steps-green-line"></div>
+                                                        <div class="banner__steps-adaptive-text-completed d-none d-sm-block">
+                                                            <span>Completed</span>
                                                         </div>
-                                                        <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
-                                                            <div class="banner__steps-circle-complete-negative modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">3</span></div>
-                                                            <div class="banner__steps-text-desk-two"><span class="banner__steps-progress-negative banner__steps-future">Get Quotes</span></div>
+                                                        <div class="banner__steps-adaptive-line-active"></div>
+                                                        <div class="banner__steps-adaptive-circle-active">
+                                                            <span>2</span>
+                                                        </div>
+                                                        <div class="banner__steps-adaptive-text">
+                                                            <span>Search Movers</span>
+                                                        </div>
 
+                                                        <div class="banner__steps-adaptive-line-active"></div>
+
+                                                        <div class="banner__steps-adaptive-circle-disable">
+                                                            <span>3</span>
+                                                        </div>
+
+                                                        <div class="banner__steps-adaptive-text-future-step d-none d-sm-block">
+                                                            <span>Get Quotes</span>
                                                         </div>
                                                     </div>
+
                                                     <form class="banner__under-progress-info modal__under-progress-info modal__control-width-mobile">
                                                         <div class="row banner__ds-two-row modal__ds-two-row">
                                                             <label for="datepicker" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-date banner__desktop-two-input-pad modal__control-input"><span>When is your move?</span></label>
                                                             <div class="col-md-7 col banner__center-control-input modal__center-control-input">
-                                                                <!--
-                                                                <input type="date" class="form-control banner__zip-code-input" id="modal-select-size">
-                                                                -->
+
                                                                 <div class="calendar calendar-modal"><p><input type="text" id="datepickerModal" placeholder="MM/DD/YYYY">
                                                                     <label for="datepickerModal" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
                                                             </div>
@@ -355,13 +306,11 @@
                                                         </div>
                                                         </div>
                                                     </form>
-                                                    <div class="banner__calculator-btn-submit gap-3">
+                                                    <div id="modalwrapperthird" class="banner__calculator-btn-submit gap-3">
 
                                                         <div>
                                                             <button class="banner__btn-back" type="button">BACK</button>
                                                         </div>
-
-
 
                                                         <button type="submit">LET'S GO</button>
 
@@ -397,21 +346,29 @@
 
                                                 <div class="modal__accent-step-search"></div>
 
-                                                <div class="banner__steps-diagram d-flex modal__gap-control-steps modal__last-step-gap-control justify-content-center">
-                                                    <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps ">
-                                                        <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">1</span></div>
-                                                        <div class="banner__steps-text-desk-two"><span>Completed</span></div>
-                                                        <div class="banner__steps-green-line"></div>
+                                                <div class="banner__steps-diagram-adaptive d-flex gap-0 justify-content-between align-items-center">
+                                                    <div class="banner__steps-adaptive-circle-active">
+                                                        <span>1</span>
                                                     </div>
-                                                    <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
-                                                        <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">2</span></div>
-                                                        <div class="banner__steps-text-desk-two banner__steps-control-mid-text"><span class="banner__steps-show-word">Search Movers</span></div>
-                                                        <div class="banner__steps-green-line"></div>
+                                                    <div class="banner__steps-adaptive-text-completed d-none d-sm-block">
+                                                        <span>Completed</span>
                                                     </div>
-                                                    <div class="banner__steps-item d-flex align-items-center modal__gap-control-steps">
-                                                        <div class="banner__steps-circle-complete modal__steps-circle-complete d-flex justify-content-center align-items-center"><span class="modal__control-circle-steps">3</span></div>
-                                                        <div class="banner__steps-text-desk-two"><span class="banner__steps-progress banner__steps-future banner__steps-show-word">Get Quotes</span></div>
+                                                    <div class="banner__steps-adaptive-line-active"></div>
+                                                    <div class="banner__steps-adaptive-circle-active">
+                                                        <span>2</span>
+                                                    </div>
+                                                    <div class="banner__steps-adaptive-text d-none d-sm-block">
+                                                        <span>Search Movers</span>
+                                                    </div>
 
+                                                    <div class="banner__steps-adaptive-line-active"></div>
+
+                                                    <div class="banner__steps-adaptive-circle-active">
+                                                        <span>3</span>
+                                                    </div>
+
+                                                    <div class="banner__steps-adaptive-text">
+                                                        <span>Get Quotes</span>
                                                     </div>
                                                 </div>
 
@@ -461,14 +418,7 @@
                                 <h1>MOVING PRICE CALCULATOR</h1>
                             </div>
 
-                                <!--
-
-                            <div class="banner__accent-line banner__accent-line-second-form"></div>
-                            -->
-
                             <div class="banner__form-wrapper">
-
-
 
                                 <!-- Desktop form 1 -->
 
@@ -525,7 +475,7 @@
                                 <div class="banner__desktop-two">
                                     <div class="banner__accent-line-second-form"></div>
 
-                                    <div class="banner__steps-diagram-adaptive d-flex justify-content-between align-items-center">
+                                    <div class="banner__steps-diagram-adaptive d-flex gap-0 justify-content-around justify-content-lg-between align-items-center">
                                         <div class="banner__steps-adaptive-circle-active">
                                             <span>1</span>
                                         </div>
@@ -556,28 +506,13 @@
                                         <div class="row banner__ds-two-row">
 
 
-                                            <label for="date-ban" class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-date banner__desktop-two-input-pad"><span>When is your move?</span></label>
-                                            <!--
-                                            <div class="calendar col-md-7 col banner__center-control-input"><p><input type="text" class="form-control banner__zip-code-input" id="datepicker" placeholder="MM/DD/YYYY">
-                                            <label for="datepicker" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
-                                            -->
-
-                                            
+                                            <label class="col col-form-label col-form-label-lg banner__from-case banner__mg-control-input banner__control-text-date banner__desktop-two-input-pad"><span>When is your move?</span></label>
 
                                             <div class="col-md-7 col banner__center-control-input banner__arrow-wrapper">
 
                                                 <p><input type="text" class="form-control banner__zip-code-input" id="datepicker" placeholder="MM/DD/YYYY">
                                                     <label for="datepicker" class="calendar-label"><img src="assets/icons/icon-arrow-down.svg" alt="Arrow Down"></label></p>
-
-                                                <!--
-                                                <input type="date" class="form-control banner__zip-code-input" id="date-ban">
-                                                -->
-
                                             </div>
-
-
-
-
 
                                         </div>
                                         <div class="row banner__ds-two-row mt-2 banner__second-form-home-size">
@@ -602,6 +537,7 @@
                                             <button type="submit">LET'S GO</button>
 
                                         </div>
+                                    </form>
                                 </div>
 
                                 <!-- -------------- -->
@@ -756,7 +692,7 @@
                             <div class="work__title-case">
                                 <h2>How Does It Work</h2>
                             </div>
-                            <div class="banner__accent-line work__adaptive-accent-line"></div>
+                            <div class="work__accent-line work__adaptive-accent-line"></div>
                             <div class="work__features-wrapper d-flex justify-content-center flex-column flex-md-row">
                                 <div class="work__features-case d-flex flex-column align-items-center">
                                     <div class="work__icon-wrap d-flex justify-content-center">
