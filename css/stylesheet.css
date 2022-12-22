@@ -690,6 +690,10 @@ a {
 
 /* Styles for calendar */
 
+
+
+
+
 .calendar > p {
     width: 100%;
 }
@@ -710,6 +714,9 @@ a {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+}
+.label-modal-calendar {
+    right: 9px !important;
 }
 .calendar-label {
     position: absolute;
@@ -814,16 +821,24 @@ a {
     max-width: 120px;
     width: 100%;
 }
+.modaldatepicker {
+    max-width: 305px;
+}
 
 /* Adaptive design */
 
 @media(max-width: 1400px) {
-    .ui-datepicker {
-        max-width: 24%;
+    .desktopdatepicker {
+        max-width: 23.75%;
     }
 }
 @media(max-width: 1200px) {
-
+    .desktopdatepicker {
+        max-width: 24.4%;
+    }
+    .desktopdatepicker > table > tbody > tr > td {
+        padding: 4px;
+    }
     .banner__mg-control-input {
         margin-right: 0;
     }
@@ -838,15 +853,12 @@ a {
     .header__right-side-wrapper {
         padding-right: 0;
     }
-    .ui-datepicker {
-        max-width: 32%;
-    }
+
 }
 
 @media(max-width: 992px) {
-
-    .ui-datepicker {
-        max-width: 43.75% !important;
+    .desktopdatepicker {
+        max-width: 43.5%;
     }
     .calendar-label {
         top: 12px !important;
@@ -959,15 +971,27 @@ a {
     }
 }
 @media(max-width: 768px) {
+    .modaldatepicker {
+        max-width: 78% !important;
+        max-height: 310px !important;
+    }
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-next {
+        margin-left: 0;
+    }
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        margin-left: 206px;
+    }
+    .desktopdatepicker {
+        max-width: 88.9%;
+    }
     .calendar {
         max-width: 100% !important;
     }
     .calendar-label {
         top: 14px;
     }
-    .ui-datepicker {
-        max-width: 89.275% !important;
-    }
+
     .ui-datepicker-prev {
         left: 480px !important;
     }
@@ -1036,12 +1060,18 @@ a {
     }
 }
 @media(max-width: 576px) {
-
+    .modaldatepicker {
+        left: 12px !important;
+    }
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        margin-left: 146px;
+    }
+    .desktopdatepicker {
+        max-width: 95.2%;
+    }
     .ui-datepicker .ui-datepicker-prev {
         left: 225px;
-    }
-    .ui-datepicker {
-        max-width: 95% !important;
     }
     .ui-datepicker td {
         padding: 5px !important;
@@ -1414,9 +1444,11 @@ a {
     }
 }
 @media (max-width: 360px) {
-    .ui-datepicker .ui-datepicker-prev {
-        left: 190px !important;
+    .modaldatepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .desktopdatepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        margin-left: 36px !important;
     }
+
     .ui-datepicker {
         max-width: 92.5% !important;
         height: 288px;

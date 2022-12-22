@@ -1,21 +1,26 @@
 // Jquery code for datepicker
 
 $( function() {
-    $("#datepicker").datepicker({
+
+    $("#datepicker, #datepickerModal").datepicker({
         showOtherMonths: true,
         selectOtherMonths: true,
         dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
     });
-    $("#datepicker").datepicker( "setDate", 7);
-} );
-$( function() {
-    $("#datepickerModal").datepicker({
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    $("#datepicker, #datepickerModal").datepicker( "setDate", 7);
+    $("#datepicker").click(function() {
+        $("#ui-datepicker-div").removeClass("modaldatepicker");
+        $("#ui-datepicker-div").addClass("desktopdatepicker");
     });
-    $("#datepickerModal").datepicker( "setDate", 7);
+
+    $("#datepickerModal").click(function() {
+        $("#ui-datepicker-div").removeClass("desktopdatepicker")
+        $("#ui-datepicker-div").addClass("modaldatepicker");
+    });
+
+    //$("#ui-datepicker-div").addClass("nick");
 } );
+
 
 
 // Logic for control panel with test buttons
