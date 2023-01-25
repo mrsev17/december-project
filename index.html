@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
+
+
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>Long Distance</title>
 </head>
@@ -41,7 +43,7 @@
                         <ul class="header__list-navbar navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="header__mid-sub-wrapper nav-item">
                                 <p class="header__mid-sub">Long Distance Moving - We are The Best!</p>
-                            </li>
+                            </li><li><button id="btn-thank-you-page-1">Call Thank You page</button></li>
                         </ul>
 
                         <div class="header__right-side-wrapper d-flex">
@@ -82,7 +84,7 @@
 
         <!-- Section for popups and control panel with buttons -->
 
-        <section class="hidden">
+        <section id="block-buttons-1" class="hidden">
             <div class="container">
                 <div class="col-12">
                     <div class="row">
@@ -402,9 +404,88 @@
             </div>
         </section>
 
+        <div id="thank-you-page-wrapper-1" class="banner__thank-you-page-wrapper">
+
+            <section class="banner banner__thank-you-page">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-6 col-lg-5"></div>
+                        <div class="col-xxl-6 col-lg-7">
+                            <div class="banner__calculator">
+                                <div class="banner__main-content thank-you-page d-flex flex-column justify-content-center">
+
+                                    <div class="banner__main-title-thank-you">
+                                        <h1>
+                                            YOUR QUOTES ARE WAITING FOR YOU!
+                                        </h1>
+                                    </div>
+
+                                    <div class="banner__description-thank-you">
+                                        <p>Long Distance Moving brings the movers directly to you! We’ll find the top moving companies for your needs and have them call you right away. Search no more. Just sit back and relax!</p>
+                                    </div>
+
+                                    <div class="thank-you-page__final-price">
+                                        <h2 id="final-price">$1450 - $1850</h2>
+                                    </div>
+
+                                    <div class="banner__thank-you-page-additional-subs">
+                                        <p>This is your estimated moving cost. Professional movers will contact you within business day. </p>
+                                    </div>
+
+                                    <div class="banner__form-wrapper">
+
+                                        <div class="banner__desktop-one">
+
+                                            <div class="banner__calculator-btn-submit">
+
+                                                <button type="submit">THANK YOU</button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid banner__thank-you-page-adapt-links">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner__vital-links-wrapper banner__thank-you-page-vital-links d-flex">
+
+                                <div class="banner__vital-case">
+                                    <a class="d-flex align-items-center gap-2" href="#"> <span> <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.74993 12.3331C5.74993 11.6427 6.30957 11.0831 6.99993 11.0831C7.69028 11.0831 8.24993 11.6427 8.24993 12.3331C8.24993 13.0235 7.69028 13.5831 6.99993 13.5831C6.30957 13.5831 5.74993 13.0235 5.74993 12.3331Z" fill="#0B7AB3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.35131 7.83072L3.08844 5.46491C3.05474 5.16159 3.05474 4.85548 3.08844 4.55216L3.10741 4.38141C3.30865 2.57026 4.73248 1.13721 6.54231 0.924286C6.84633 0.888519 7.15349 0.888519 7.45751 0.924286C9.26733 1.13721 10.6912 2.57026 10.8924 4.38141L10.9114 4.55216C10.9451 4.85548 10.9451 5.16159 10.9114 5.46491L10.6485 7.83071L11.2207 7.87639C12.123 7.94842 12.8597 8.62667 13.006 9.51992C13.311 11.383 13.311 13.2832 13.006 15.1463C12.8597 16.0395 12.123 16.7178 11.2207 16.7898L9.97391 16.8893C7.99442 17.0474 6.00548 17.0474 4.026 16.8893L2.77922 16.7898C1.87695 16.7178 1.14019 16.0395 0.993932 15.1463C0.688872 13.2832 0.688872 11.383 0.993932 9.51992C1.14019 8.62667 1.87695 7.94842 2.77922 7.87639L3.35131 7.83072ZM6.68836 2.16572C6.89534 2.14137 7.10447 2.14137 7.31146 2.16572C8.54365 2.31069 9.51304 3.28636 9.65005 4.51945L9.66903 4.6902C9.69253 4.90177 9.69253 5.1153 9.66903 5.32687L9.40139 7.73557C7.80206 7.63259 6.19776 7.63259 4.59843 7.73558L4.33079 5.32687C4.30728 5.1153 4.30728 4.90177 4.33079 4.6902L4.34976 4.51945C4.48677 3.28636 5.45617 2.31069 6.68836 2.16572ZM9.87443 9.02289C7.96115 8.87015 6.03875 8.87015 4.12547 9.02289L2.87869 9.12243C2.54959 9.1487 2.28085 9.3961 2.2275 9.72191C1.94435 11.4512 1.94435 13.215 2.2275 14.9443C2.28085 15.2701 2.54959 15.5175 2.8787 15.5438L4.12547 15.6433C6.03875 15.796 7.96116 15.796 9.87443 15.6433L11.1212 15.5438C11.4503 15.5175 11.719 15.2701 11.7724 14.9443C12.0556 13.215 12.0556 11.4512 11.7724 9.72191C11.719 9.3961 11.4503 9.1487 11.1212 9.12243L9.87443 9.02289Z" fill="#0B7AB3"/>
+</svg> </span> <span>Privacy Policy</span> </a>
+                                </div>
+
+                                <div class="banner__vital-case">
+                                    <a class="d-flex align-items-center gap-2" href="#"> <span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00016 6.9585C8.34534 6.9585 8.62516 7.23832 8.62516 7.5835V11.7502C8.62516 12.0953 8.34534 12.3752 8.00016 12.3752C7.65498 12.3752 7.37516 12.0953 7.37516 11.7502V7.5835C7.37516 7.23832 7.65498 6.9585 8.00016 6.9585Z" fill="#0B7AB3"/>
+<path d="M8.00016 5.50016C8.4604 5.50016 8.8335 5.12707 8.8335 4.66683C8.8335 4.20659 8.4604 3.8335 8.00016 3.8335C7.53993 3.8335 7.16683 4.20659 7.16683 4.66683C7.16683 5.12707 7.53993 5.50016 8.00016 5.50016Z" fill="#0B7AB3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.708496 8.00016C0.708496 3.97309 3.97309 0.708496 8.00016 0.708496C12.0272 0.708496 15.2918 3.97309 15.2918 8.00016C15.2918 12.0272 12.0272 15.2918 8.00016 15.2918C3.97309 15.2918 0.708496 12.0272 0.708496 8.00016ZM8.00016 1.9585C4.66344 1.9585 1.9585 4.66344 1.9585 8.00016C1.9585 11.3369 4.66344 14.0418 8.00016 14.0418C11.3369 14.0418 14.0418 11.3369 14.0418 8.00016C14.0418 4.66344 11.3369 1.9585 8.00016 1.9585Z" fill="#0B7AB3"/>
+</svg> </span> <span>Terms of Use</span> </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
         <!-- ------------------------------------------------- -->
 
-        <section class="banner">
+        <section id="main-banner-calculator-1" class="banner">
 
             <div class="container">
                 <div class="row">
@@ -432,7 +513,7 @@
                                     <div class="row flex-column flex-lg-row banner__desktop-one-form-mb-control">
                                         <label for="inputEmail" class="col-sm-2 col col-form-label banner__from-case banner__mg-control-input banner__control-text-zip"> <span>From:</span> </label>
                                         <div class="col-lg-10 col">
-                                            <input type="text" class="form-control banner__zip-code-input" id="inputEmail" placeholder="Zip code">
+                                            <input type="text" class="form-control banner__zip-code-input" id="inputEmail" placeholder="Zip Code">
                                         </div>
                                     </div>
 
@@ -654,7 +735,7 @@
                 </div>
         </section>
 
-        <section class="work">
+        <section id="work-wrapper-1" class="work">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -704,7 +785,7 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section id="reviews-wrapper-1" class="reviews">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12">
@@ -950,7 +1031,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="services-wrapper-1" class="services-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1117,6 +1198,101 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+        const buttonThankYouPageOne = document.getElementById("btn-thank-you-page-1");
+
+        const sectionThankYouOne = document.getElementById("thank-you-page-wrapper-1");
+        const sectionBlockButtonsOne = document.getElementById("block-buttons-1");
+        const sectionBannerCalculatorOne = document.getElementById("main-banner-calculator-1");
+        const sectionWorkWrapperOne = document.getElementById("work-wrapper-1");
+        const sectionReviewsOne = document.getElementById("reviews-wrapper-1");
+        //const sectionServicesOne = document.getElementById("services-wrapper-1");
+
+        sectionThankYou.style.display = "none";
+        buttonThankYouPage.addEventListener("click", (event) => {
+            event.preventDefault();
+            sectionBlockButtons.style.display = "none";
+            sectionBannerCalculator.style.display = "none";
+            sectionWorkWrapper.style.display = "none";
+            sectionReviews.style.display = "none";
+            sectionServices.style.display = "none";
+            sectionThankYou.style.display = "block";
+        })
+
+    </script>
+
+    <script>
+        function getZipCodeByStateAndCity(state,city){
+
+// alert(state+' '+city);
+ var url = 'https://app.zipcodebase.com/api/v1/code/city?apikey=8fe2c7c0-9c17-11ed-b532-7d5b12ea2a9f&city='+city+'&country=us&state_name='+state;
+     $.ajax({
+   type: "GET",
+   crossDomain: true,
+   dataType: "json",
+   url: url,
+   success: function (jsondata) {
+ //    alert('ФУНКЦИЯ В КОДЕ'+jsondata.results[0]);
+
+     var sss = jsondata.results[0];
+
+     var s = sss.toString();
+
+      $( "#cod_tos" ).val(s);
+   },
+ });
+
+
+}
+    </script>
+
+    <script>
+        // Script for work green light in inputs, if sucsses
+
+        const inputZipFirst = document.getElementById("inputEmail");
+        const inputStateTo = document.getElementById("inputStateTwo");
+        const inputCityPopup = document.getElementById("inputCityPopup");
+
+        inputZipFirst.addEventListener("input", (event) => {
+            event.stopPropagation();
+            if(inputZipFirst.value.length === 5) {
+                console.log(true);
+                inputZipFirst.style.boxShadow = "#22856A 0 1px 4px";
+                inputZipFirst.style.backgroundPosition = "98%";
+                inputZipFirst.classList.add("banner__special-class-input-done");
+            } else {
+                inputZipFirst.style.boxShadow = "none";
+                inputZipFirst.classList.remove("banner__special-class-input-done");
+            }
+        })
+
+        inputStateTo.addEventListener("input", (event) => {
+            event.stopPropagation();
+            if(inputStateTo.value !== "Select State") {
+                inputStateTo.style.boxShadow = "#22856A 0 1px 4px";
+                inputStateTo.style.backgroundPosition = "96%";
+                inputStateTo.classList.add("banner__special-class-input-done");
+            } else {
+                inputStateTo.style.boxShadow = "none";
+                inputStateTo.classList.remove("banner__special-class-input-done");
+            }
+        })
+
+        inputCityPopup.addEventListener("input", (event) => {
+            event.stopPropagation();
+            if(inputCityPopup.value !== "Select City") {
+                inputCityPopup.style.boxShadow = "#22856A 0 1px 4px";
+                inputCityPopup.style.backgroundPosition = "96%";
+                inputCityPopup.classList.add("banner__special-class-input-done");
+            } else {
+                inputCityPopup.style.boxShadow = "none";
+                inputCityPopup.classList.remove("banner__special-class-input-done");
+            }
+        })
+
+    </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="script/script.js"></script>

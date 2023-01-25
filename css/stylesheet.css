@@ -1802,31 +1802,38 @@ a {
     margin: 29px auto 0;
 }
 
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: 1px solid #000000;
+    background-color: transparent;
+    /*
+    font-weight: normal;
+     */
+    color: transparent;
+}
+.banner__special-class-input-done:active,
+.banner__special-class-input-done {
+    background-image: url("../assets/icons/check-lg.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: 1px solid #22856A;
+    box-shadow: #22856A 0 1px 4px;
+}
 
 
 
 /* Additional Styles for thank you page */
-/*
-.header__thank-you-page {
-    min-height: 4vh;
-}
-.footer__thank-you-page {
-    min-height: 9vh;
-}
 
- */
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
 .banner__thank-you-page {
     margin-bottom: 0;
     padding: 46px 0 150px;
-    /*
-    min-height: 81vh;
-
-     */
 }
 .banner__main-title-thank-you {
     margin-bottom: 40px;
@@ -1889,10 +1896,6 @@ html, body {
     .banner__thank-you-page {
         margin-bottom: 0;
         padding: 30px 0 4px;
-        /*
-        min-height: 81vh;
-
-         */
     }
     .banner__main-title-thank-you h1 {
         font-size: 20px;

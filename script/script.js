@@ -6,6 +6,7 @@ $( function() {
         showOtherMonths: true,
         selectOtherMonths: true,
         dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        minDate: 0
     });
     $("#datepicker, #datepickerModal").datepicker( "setDate", 7);
     $("#datepicker").click(function() {
@@ -17,6 +18,8 @@ $( function() {
         $("#ui-datepicker-div").removeClass("desktopdatepicker")
         $("#ui-datepicker-div").addClass("modaldatepicker");
     });
+
+
 
     //$("#ui-datepicker-div").addClass("nick");
 } );
