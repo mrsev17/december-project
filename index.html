@@ -403,7 +403,7 @@
             </div>
             </div>
         </section>
-
+        <!--
         <div id="thank-you-page-wrapper-1" class="banner__thank-you-page-wrapper">
 
             <section class="banner banner__thank-you-page">
@@ -482,7 +482,7 @@
             </section>
 
         </div>
-
+        -->
         <!-- ------------------------------------------------- -->
 
         <section id="main-banner-calculator-1" class="banner">
@@ -520,7 +520,7 @@
                                     <div class="row">
                                         <label for="inputStateTwo" class="col-sm-2 col-form-label banner__from-case banner__mg-control-input banner__control-text-position"> <span>To:</span> </label>
                                         <div class="col-lg-5 banner__control-pad-state-right ">
-                                            <select id="inputStateTwo" class="form-select banner__state-input">
+                                            <select id="inputStateTwo" class="form-select banner__state-input banner__special-class-small-input-mark">
                                                 <option selected>Select State</option>
                                                 <option>State 1</option>
                                                 <option>State 2</option>
@@ -531,7 +531,7 @@
                                         <label for="inputCityPopup" class="col-sm-2 col-form-label banner__from-case banner__calc-step-one-label"></label>
 
                                         <div class="col-lg-5 banner__control-pad-state-left banner__adaptive-control-pad">
-                                            <select id="inputCityPopup" class="form-select banner__state-input">
+                                            <select id="inputCityPopup" class="form-select banner__state-input banner__special-class-small-input-mark">
                                                 <option selected>Select City</option>
                                                 <option>City 1</option>
                                                 <option>City 2</option>
@@ -636,7 +636,7 @@
                                             <span>2</span>
                                         </div>
                                         <div class="banner__steps-adaptive-text d-none d-sm-block">
-                                            <span>Search Movers</span>
+                                            <span id="sub-search-movers-ready">Search Movers</span>
                                         </div>
 
                                         <div class="banner__steps-adaptive-line-active"></div>
@@ -1234,7 +1234,6 @@
    dataType: "json",
    url: url,
    success: function (jsondata) {
- //    alert('ФУНКЦИЯ В КОДЕ'+jsondata.results[0]);
 
      var sss = jsondata.results[0];
 
@@ -1249,6 +1248,33 @@
     </script>
 
     <script>
+
+        const inputRecipientName = document.getElementById("recipient-name");
+        // document.getElementById('abbr').addEventListener('keypress', fn, false);
+        
+        $('#recipient-name').on('keypress', function() {
+            var that = this;
+
+            setTimeout(function() {
+                var res = /[^a-zA-Z ]/g.exec(that.value);
+                console.log(res);
+                that.value = that.value.replace(res, '');
+            }, 0);
+        });
+
+
+        inputRecipientName.addEventListener("input", (event) => {
+            event.stopPropagation();
+            if(words >= 3) {
+                inputRecipientName.style.boxShadow = "#22856A 0 1px 4px";
+                inputRecipientName.style.backgroundPosition = "98%";
+                inputRecipientName.classList.add("banner__special-class-input-done");
+            } else {
+                inputRecipientName.style.boxShadow = "none";
+                inputRecipientName.classList.remove("banner__special-class-input-done");
+            }
+        })
+
         // Script for work green light in inputs, if sucsses
 
         const inputZipFirst = document.getElementById("inputEmail");
@@ -1272,7 +1298,6 @@
             event.stopPropagation();
             if(inputStateTo.value !== "Select State") {
                 inputStateTo.style.boxShadow = "#22856A 0 1px 4px";
-                inputStateTo.style.backgroundPosition = "96%";
                 inputStateTo.classList.add("banner__special-class-input-done");
             } else {
                 inputStateTo.style.boxShadow = "none";
@@ -1284,7 +1309,6 @@
             event.stopPropagation();
             if(inputCityPopup.value !== "Select City") {
                 inputCityPopup.style.boxShadow = "#22856A 0 1px 4px";
-                inputCityPopup.style.backgroundPosition = "96%";
                 inputCityPopup.classList.add("banner__special-class-input-done");
             } else {
                 inputCityPopup.style.boxShadow = "none";

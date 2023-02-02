@@ -18,8 +18,8 @@ $( function() {
         $("#ui-datepicker-div").removeClass("desktopdatepicker")
         $("#ui-datepicker-div").addClass("modaldatepicker");
     });
-
-
+    var datePicker = $("#datepicker").data('kendoDatePicker');
+    datePicker.element.attr("placeholder", "type date");
 
     //$("#ui-datepicker-div").addClass("nick");
 } );
@@ -58,6 +58,7 @@ const showSecondDesktop = () => {
 }
 
 const showThirdDesktop = () => {
+    document.getElementById("sub-search-movers-ready").style.color = "black";
     desktopFirstWrapper.style.display = "none";
     desktopSecondWrapper.style.display = "none";
     desktopThirdWrapper.style.display = "block";

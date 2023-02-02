@@ -856,7 +856,30 @@ a {
 
 }
 
+/*==========*/
+
+
+.banner__special-class-input-done:active,
+.banner__special-class-input-done {
+    background-image: url("../assets/icons/check-lg.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: 1px solid #22856A;
+    box-shadow: #22856A 0 1px 4px;
+}
+
+.banner__special-class-small-input-mark {
+    background-position: 96%;
+}
+
+/* ========== */
+
 @media(max-width: 992px) {
+
+    .banner__special-class-small-input-mark {
+        background-position: 98%;
+    }
+
     .desktopdatepicker {
         max-width: 42.95%;
     }
@@ -970,7 +993,13 @@ a {
         margin-bottom: 8px;
     }
 }
+
+
+
 @media(max-width: 768px) {
+
+
+
     .modaldatepicker {
         max-width: 80% !important;
         max-height: 310px !important;
@@ -1817,14 +1846,8 @@ a {
      */
     color: transparent;
 }
-.banner__special-class-input-done:active,
-.banner__special-class-input-done {
-    background-image: url("../assets/icons/check-lg.svg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    border: 1px solid #22856A;
-    box-shadow: #22856A 0 1px 4px;
-}
+
+
 
 
 
